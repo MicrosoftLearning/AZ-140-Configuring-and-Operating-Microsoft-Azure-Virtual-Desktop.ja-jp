@@ -52,7 +52,7 @@ Active Directory ドメイン サービス (AD DS) 環境に Azure Virtual Deskt
 
    |設定|値|
    |---|---|
-   |ユーザー名|**ADATUM\Student**|
+   |ユーザー名|**Student@adatum.com**|
    |パスワード|**Pa55w.rd1234**|
 
 1. **az140-21-p1-0** へのリモート デスクトップ セッション内で、Microsoft Edge を起動して、[Azure portal](https://portal.azure.com) に移動します。プロンプトが表示されたら、このラボで使用しているサブスクリプションで所有者の役割を持つユーザーアカウントの資格情報を使用してサインインします。
