@@ -1,10 +1,18 @@
-﻿# AZ-140: Microsoft Azure Virtual Desktop の構成と運用
+---
+ms.openlocfilehash: db35f588faf44d2a422ebb98ff23a015e3ae9aa2
+ms.sourcegitcommit: 6a71f41d5cca19a259771c7ca3e588876dd8d9a9
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 02/05/2022
+ms.locfileid: "145883958"
+---
+# <a name="az-140-configuring-and-operating-microsoft-azure-virtual-desktop"></a>AZ-140:Microsoft Azure Virtual Desktop の構成と操作
 
-## 重要
+## <a name="important"></a>重要
 
 **ラボは、使用する ID プロバイダーに応じて、2 つの別々のトラックで構成されます。**
 
-- Active Directory ドメイン サービス (AD DS)。このトラックは、次のラボで構成されています。
+- Active Directory ドメイン サービス (AD DS)。 このトラックは、次のラボで構成されています。
 
    - LAB_01L01_Prepare_for_deployment_of_AVD_ADDS.md
    - LAB_02L01_Deploy_host_pools_and_session_hosts_with_the_Azure_portal_ADDS.md
@@ -17,7 +25,7 @@
    - LAB_04L02_Package_AVD_applications_ADDS.md
    - LAB_05L01_Implement_autoscaling_in_host_pools_ADDS.md
 
-- Azure Active Directory Domain Services (Azure AD DS)。このトラックは、次のラボで構成されています。
+- Azure Active Directory Domain Services (Azure AD DS)。 このトラックは、次のラボで構成されています。
 
    - LAB_01L01_Prepare_for_deployment_of_AVD_AADDS.md
    - LAB_02L01_Create_and_configure_host_pools_and_session_hosts_AADDS.md

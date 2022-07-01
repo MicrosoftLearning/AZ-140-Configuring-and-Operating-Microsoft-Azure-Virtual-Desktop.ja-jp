@@ -1,57 +1,57 @@
 {
-  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
-  "contentVersion": "1.0.0.0",
-  "parameters": {
-     "vmSize": {
-        "type": "string",
-        "defaultValue": "Standard_D2s_v3",
-        "metadata": {
-          "description": "Virtual machine size"
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "vmSize": {
+            "type": "string",
+            "defaultValue": "Standard_D2s_v3",
+            "metadata": {
+                "description": "仮想マシンのサイズ"
+            }
+        },
+        "namePrefix": {
+            "type": "string",
+            "defaultValue": "az140-25",
+            "metadata": {
+                "description": "リソースの名前付けプレフィックス"
+            }
+        },
+        "adminUsername": {
+            "type": "string",
+            "metadata": {
+                "description": "管理者ユーザー名"
+            }
+        },
+        "adminPassword": {
+            "type": "securestring",
+            "metadata": {
+                "description": "管理者パスワード"
+            }
         }
-     },
-     "namePrefix": {
-        "type": "string",
-        "defaultValue": "az140-25",
-        "metadata": {
-          "description": "Resource naming prefix"
-        }
-     },
-     "adminUsername": {
-        "type": "string",
-        "metadata": {
-          "description": "Admin username"
-        }
-     },
-     "adminPassword": {
-        "type": "securestring",
-        "metadata": {
-          "description": "Admin password"
-        }
-     }
-  },
-  "variables": {
-    "vmName": "[concat(parameters('namePrefix'),'-vm0')]",
-    "nicName": "[concat(parameters('namePrefix'),'-nic0')]",
-    "virtualNetworkName": "[concat(parameters('namePrefix'),'-vnet')]",
-    "publicIPAddressName": "[concat(parameters('namePrefix'),'-pip')]",
-    "nsgName": "[concat(parameters('namePrefix'),'-nsg')]",
-    "vnetIpPrefix": "10.25.0.0/16", 
-    "subnetIpPrefix": "10.25.0.0/24", 
-    "subnetName": "subnet0",
-    "subnetRef": "[resourceId('Microsoft.Network/virtualNetworks/subnets', variables('virtualNetworkName'), variables('subnetName'))]",
-    "imagePublisher": "MicrosoftWindowsDesktop",
-    "imageOffer": "office-365",
-    "imageSku": "20h2-evd-o365pp-g2",
-    "windowsImage": {
-      "publisher": "[variables('imagePublisher')]",
-      "offer": "[variables('imageOffer')]",
-      "sku": "[variables('imageSku')]",
-      "version": "latest"
     },
-    "computeApiVersion": "2019-07-01",
-    "networkApiVersion": "2019-11-01"
-  },
-  "resources": [
+    "variables": {
+        "vmName": "[concat(parameters('namePrefix'),'-vm0')]",
+        "nicName": "[concat(parameters('namePrefix'),'-nic0')]",
+        "virtualNetworkName": "[concat(parameters('namePrefix'),'-vnet')]",
+        "publicIPAddressName": "[concat(parameters('namePrefix'),'-pip')]",
+        "nsgName": "[concat(parameters('namePrefix'),'-nsg')]",
+        "vnetIpPrefix": "10.25.0.0/16",
+        "subnetIpPrefix": "10.25.0.0/24",
+        "subnetName": "subnet0",
+        "subnetRef": "[resourceId('Microsoft.Network/virtualNetworks/subnets', variables('virtualNetworkName'), variables('subnetName'))]",
+        "imagePublisher": "MicrosoftWindowsDesktop",
+        "imageOffer": "office-365",
+        "imageSku": "20h2-evd-o365pp-g2",
+        "windowsImage": {
+            "publisher": "[variables('imagePublisher')]",
+            "offer": "[variables('imageOffer')]",
+            "sku": "[variables('imageSku')]",
+            "version": "latest"
+        },
+        "computeApiVersion": "2019-07-01",
+        "networkApiVersion": "2019-11-01"
+    },
+    "resources": [
         {
             "name": "[variables('vmName')]",
             "type": "Microsoft.Compute/virtualMachines",
@@ -177,11 +177,11 @@
                             "direction": "Inbound",
                             "sourcePortRange": "*",
                             "destinationAddressPrefix": "*"
-                       }
-                   }
-               ]
-           }
-       }
-  ],
-  "outputs": {}
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "outputs": {}
 }
