@@ -1,13 +1,13 @@
 ---
 lab:
   title: ラボ:ホスト プール (AD DS) での自動スケーリングの実装
-  module: 'Module: Monitor and Maintain a WVD Infrastructure'
-ms.openlocfilehash: 68d4ecb65226a8b3847b6ba715b1671cc33a8d03
-ms.sourcegitcommit: 4247384bffae960ce4d97c1b9f7b62a71a783b0d
+  module: 'Module 5: Monitor and Maintain a WVD Infrastructure'
+ms.openlocfilehash: cb5b88343bebc08c8de6709c0a7d06b2298882d7
+ms.sourcegitcommit: 2662f7a0156a1931cda5a8c1d4e5573a96df5fa1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "145883994"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "146977072"
 ---
 # <a name="lab---implement-autoscaling-in-host-pools-ad-ds"></a>ラボ - ホスト プールに自動スケールを実装する (AD DS)
 # <a name="student-lab-manual"></a>受講生用ラボ マニュアル
@@ -64,7 +64,7 @@ Active Directory ドメイン サービス (AD DS) 環境で Azure Virtual Deskt
 
 1. ラボのコンピューターから Web ブラウザーを起動し、[Azure portal](https://portal.azure.com) に移動し、このラボで使用するサブスクリプションの所有者の役割を持つユーザーアカウントの認証情報を提供してサインインします。
 1. Azure portal で、「**仮想マシン**」を検索して選択し、 **[Virtual Machines]** ブレードで、 **[az140-vm11]** を選択します。
-1. **[az140-dc-vm11]** ブレードで **[接続]** を選択し、ドロップダウン メニューで **[Bastion]** を選択し、 **[az140-dc-vm11 \| 接続]** ブレードの **[Bastion]** タブで **[Bastion を使用する]** を選択します。
+1. **[az140-dc-vm11]** ウィンドウで **[接続]** を選択し、ドロップダウン メニューで **[Bastion]** を選択し、 **[az140-dc-vm11 \| 接続]** ウィンドウの **[Bastion]** タブで **[Bastion を使用する]** を選択します。
 1. プロンプトが表示されたら、次の資格情報を入力し、 **[接続]** を選択します。
 
    |設定|値|

@@ -2,12 +2,12 @@
 lab:
   title: ラボ:Azure Virtual Desktop プロファイル (Azure AD DS) を実装および管理する
   module: 'Module 4: Manage User Environments and Apps'
-ms.openlocfilehash: 7ecb836519134f641654c31d0a48618e26b73448
-ms.sourcegitcommit: c58ff03269d4d48f76e1b5869cc0f3a2c97ee272
+ms.openlocfilehash: 8e2b6d526d390c4e7b49abff4335eb6bec860475
+ms.sourcegitcommit: 2662f7a0156a1931cda5a8c1d4e5573a96df5fa1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2022
-ms.locfileid: "145883990"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "146977075"
 ---
 # <a name="lab---implement-and-manage-azure-virtual-desktop-profiles-azure-ad-ds"></a>ラボ - Azure Virtual Desktop プロファイル (Azure AD DS) を実装および管理する
 # <a name="student-lab-manual"></a>受講生用ラボ マニュアル
@@ -51,8 +51,8 @@ Azure Active Directory ドメイン サービス (Azure AD DS) 環境に Azure V
 #### <a name="task-1-configure-local-administrators-group-on-azure-virtual-desktop-session-host-vms"></a>タスク 1:Azure Virtual Desktop セッション ホスト VM でローカル管理者グループを構成する
 
 1. ラボのコンピューターから Web ブラウザーを起動し、[Azure portal](https://portal.azure.com) に移動し、このラボで使用するサブスクリプションの所有者の役割を持つユーザーアカウントの認証情報を提供してサインインします。
-1. ラボ コンピューターの Azure portal で、「**仮想マシン**」を検索して選択し、 **[仮想マシン]** ブレードから **[az140-cl-vm11a]** エントリを選択します。 これにより、**az140-cl-vm11a** ブレードが開きます。
-1. **[az140-cl-vm11a]** ブレードで **[接続]** を選択し、ドロップダウン メニューで **[Bastion]** を選択し、 **[az140-cl-vm11a \| 接続]** ブレードの **[Bastion]** タブで **[Bastion を使用する]** を選択します。
+1. ラボ コンピューターの Azure portal で、「**仮想マシン**」を検索して選択し、 **[仮想マシン]** ブレードから **az140-cl-vm11a** エントリを選択します。 これにより、**az140-cl-vm11a** ブレードが開きます。
+1. **[az140-cl-vm11a]** ウィンドウで **[接続]** を選択し、ドロップダウン メニューで **[Bastion]** を選択し、 **[az140-cl-vm11a \| 接続]** ウィンドウの **[Bastion]** タブで **[Bastion を使用する]** を選択します。
 1. プロンプトが表示されたら、次の資格情報を入力し、 **[接続]** を選択します。
 
    |設定|値|

@@ -2,12 +2,12 @@
 lab:
   title: ラボ:Azure Virtual Desktop プロファイル (AD DS) を実装および管理する
   module: 'Module 4: Manage User Environments and Apps'
-ms.openlocfilehash: 74bfd6ca118377b66f1a59947890efb821a43428
-ms.sourcegitcommit: 0cbc3a5f6fd902e2253dae2575aff75bbc2fa99c
+ms.openlocfilehash: 1399ecd90b9a5d360787a9be90daa3f76bc6fb99
+ms.sourcegitcommit: 2662f7a0156a1931cda5a8c1d4e5573a96df5fa1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "145883970"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "146977071"
 ---
 # <a name="lab---implement-and-manage-azure-virtual-desktop-profiles-ad-ds"></a>ラボ - Azure Virtual Desktop プロファイル (AD DS) を実装および管理する
 # <a name="student-lab-manual"></a>受講生用ラボ マニュアル

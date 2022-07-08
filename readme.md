@@ -1,18 +1,18 @@
 ---
-ms.openlocfilehash: dcaccab29b1e015e0683c1ecb1e535d9b132ddfa
-ms.sourcegitcommit: 6a71f41d5cca19a259771c7ca3e588876dd8d9a9
+ms.openlocfilehash: 0bb5c5351af0936af06e306bee809a3a8014a7c1
+ms.sourcegitcommit: e20f28b25e79c58542ac1fd5d29fe7acef4bba86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2022
-ms.locfileid: "145883931"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "146977017"
 ---
 # <a name="az-140-configuring-and-operating-microsoft-azure-virtual-desktop"></a>AZ-140:Microsoft Azure Virtual Desktop の構成と操作
 
-- **[最新の学生ハンドブックと AllFiles コンテンツをダウンロードする](../../releases/latest)**
+- **[ラボへのリンク (HTML 形式)](https://microsoftlearning.github.io/AZ-140-Configuring-and-Operating-Microsoft-Azure-Virtual-Desktop/)**
 - **あなたは MCT ですか?** - [MCT 向けの GitHub ユーザー ガイド](https://microsoftlearning.github.io/MCT-User-Guide/)をご覧ください
 - **ラボの手順を手動で作成する必要がありますか?** - 手順は、[MicrosoftLearning/Docker-Build](https://github.com/MicrosoftLearning/Docker-Build) リポジトリで確認できます
 
-## <a name="what-are-we-doing"></a>ここでの内容
+## <a name="what-are-we-doing"></a>説明
 
 - このコースをサポートするには、コースで使用される Azure サービスを最新の状態に保つために、コース コンテンツを頻繁に更新する必要があります。  ラボの手順とラボ ファイルは GitHub で公開しています。これにより、コースの作成者と MCT 間でのオープンな作業が可能となり、Azure プラットフォームの変更に合わせてコンテンツを最新の状態に保つことができます。
 

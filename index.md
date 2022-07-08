@@ -2,12 +2,12 @@
 title: オンライン ホステッド インストラクション
 permalink: index.html
 layout: home
-ms.openlocfilehash: f4e2e1489e1997cfd064aa74eb5345e302bb2424
-ms.sourcegitcommit: 6a71f41d5cca19a259771c7ca3e588876dd8d9a9
+ms.openlocfilehash: 43166964d12182982da0b164ba5014eae6bc59b2
+ms.sourcegitcommit: e20f28b25e79c58542ac1fd5d29fe7acef4bba86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2022
-ms.locfileid: "145883963"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "146977020"
 ---
 # <a name="content-directory"></a>コンテンツ ディレクトリ
 
@@ -21,10 +21,12 @@ ms.locfileid: "145883963"
 {% for activity in labs %}| {{ activity.lab.module }} | [{{ activity.lab.title }}{% if activity.lab.type %} - {{ activity.lab.type }}{% endif %}]({{ site.github.url }}{{ activity.url }}) |
 {% endfor %}
 
-## <a name="demos"></a>デモ
+<!--
+## Demos
 
 {% assign demos = site.pages | where_exp:"page", "page.url contains '/Instructions/Demos'" %}
-| モジュール | デモ |
+| Module | Demo |
 | --- | --- | 
-{% for activity in demos %}| {{ activity.demo.module }} | [{{ activity.demo.title }}]({{ site.github.url }}{{ activity.url }}) |
+{% for activity in demos  %}| {{ activity.demo.module }} | [{{ activity.demo.title }}]({{ site.github.url }}{{ activity.url }}) |
 {% endfor %}
+-->
