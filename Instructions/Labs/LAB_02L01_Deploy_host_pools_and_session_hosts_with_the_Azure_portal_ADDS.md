@@ -1,14 +1,9 @@
 ---
 lab:
-  title: ラボ:Azure portal (AD DS) を使用してホスト プールとセッション ホストをデプロイする
+  title: 'ラボ:Azure portal (AD DS) を使用してホスト プールとセッション ホストをデプロイする'
   module: 'Module 2: Implement a AVD Infrastructure'
-ms.openlocfilehash: ffe92ae5f2a89c78574339d78987b0a38251968a
-ms.sourcegitcommit: 2662f7a0156a1931cda5a8c1d4e5573a96df5fa1
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "146977073"
 ---
+
 # <a name="lab---deploy-host-pools-and-session-hosts-by-using-the-azure-portal-ad-ds"></a>ラボ- Azure portal (AD DS) を使用してホスト プールとセッション ホストをデプロイする
 # <a name="student-lab-manual"></a>受講生用ラボ マニュアル
 
@@ -155,9 +150,9 @@ Azure Active Directory ドメインサービス (AD DS) 環境でホスト プ�
 
 #### <a name="task-3-manage-the-azure-virtual-desktop-host-pool-session-hosts"></a>タスク 3:Azure Virtual Desktop ホスト プール セッション ホストを管理する
 
-1. **az140-dc-vm11** へのリモートデスクトップセッション内で、Azure portal を表示している Web ブラウザーの画面で、「**Azure Virtual Desktop**」を検索して選択し、 **[Azure Virtual Desktop]** ブレードの垂直メニュー バーの **[管理] セクション** で、 **[ホスト プール]** を選択します。
+1. **az140-dc-vm11** へのリモートデスクトップセッション内で、Azure portal を表示している Web ブラウザーの画面で、「**Azure Virtual Desktop**」を検索して選択し、 **[Azure Virtual Desktop]** ブレードの垂直メニュー バーの **[管理] セクション**で、 **[ホスト プール]** を選択します。
 1. **[Azure Virtual Desktop \| ホスト プール]** ブレードで、ホスト プールの一覧から **[az140-21-hp1]** を選択します。
-1. **[az140-21-hp1]** ブレードの垂直メニューバーの **[管理] セクション** で、 **[セッション ホスト]** を選択し、プールが 2 つのホストで構成されていることを確認します。 
+1. **[az140-21-hp1]** ブレードの垂直メニューバーの **[管理] セクション**で、 **[セッション ホスト]** を選択し、プールが 2 つのホストで構成されていることを確認します。 
 1. **[az140-21-hp1 \| セッション ホスト]** ブレードで、 **[+ 追加]** を選択します。
 1. **[仮想マシンをホスト プール ブレードに追加]** ブレードの **[基本]** タブで、事前構成された設定を確認し、 **[次へ: 仮想マシン]** を選択します。
 1. **[仮想マシンをホスト プール ブレードに追加]** ブレードの **[Virtual Machines]** タブで、次の設定を指定し、 **[確認および作成]** を選択します (他は既定値のままにします)。

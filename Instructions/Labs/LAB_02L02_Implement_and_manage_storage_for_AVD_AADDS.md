@@ -1,14 +1,9 @@
 ---
 lab:
-  title: ラボ:AVD (Azure AD DS) 用のストレージを実装および管理する
+  title: 'ラボ:AVD (Azure AD DS) 用のストレージを実装および管理する'
   module: 'Module 2: Implement a AVD Infrastructure'
-ms.openlocfilehash: 677df9c62888597665700b222f32d398afee8299
-ms.sourcegitcommit: 9dfe7ec7ff74e5b72c02bb30a658ed8de52bfb44
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "145883972"
 ---
+
 # <a name="lab---implement-and-manage-storage-for-avd-azure-ad-ds"></a>ラボ - AVD (Azure AD DS) 用のストレージを実装および管理する
 # <a name="student-lab-manual"></a>受講生用ラボ マニュアル
 
@@ -67,7 +62,7 @@ Azure Active Directory ドメイン サービス (Azure AD DS) 環境で Azure V
 1. **az140-cl-vm11a** へのリモート デスクトップ セッション内で、Azure portal を表示する Microsoft Edge で「**ストレージ アカウント**」を検索して選択し、 **[ストレージ アカウント]** ブレードで **[+ 作成]** を選択します。
 1. **[ストレージ アカウントの作成]** ブレードの **[基本]** タブで、次の設定を指定します (他の設定は既定値のままにします)。
 
-   |設定|[値]|
+   |設定|値|
    |---|---|
    |サブスクリプション|このラボで使用している Azure サブスクリプションの名前|
    |リソース グループ|新しいリソース グループの名前 **az140-22a-RG**|
@@ -88,7 +83,7 @@ Azure Active Directory ドメイン サービス (Azure AD DS) 環境で Azure V
 1. ストレージ アカウント ブレードの左側の垂直メニューの **[データ ストレージ]** セクションで、 **[ファイル共有]** を選択し、 **[+ ファイル共有]** を選択します。
 1. **[新しいファイル共有]** ブレードで、次の設定を指定し、 **[作成]** を選択します (他の設定はデフォルト値のままにします)。
 
-   |設定|[値]|
+   |設定|値|
    |---|---|
    |名前|**az140-22a-profiles**|
 
@@ -119,7 +114,7 @@ Azure Active Directory ドメイン サービス (Azure AD DS) 環境で Azure V
 
 #### <a name="task-5-configure-the-azure-files-directory-and-file-level-permissions"></a>タスク 5:Azure Files のディレクトリおよびファイル レベルのアクセス許可を構成する
 
-1. **az140-cl-vm11a** へのリモート デスクトップ セッション内で、**コマンド プロンプト** を起動し、**コマンド プロンプト** ウィンドウから次のコマンドを実行して、ドライブをターゲット共有にマップします (`<storage-account-name>` プレースホルダーをストレージ アカウントの名前に置き換えます)。
+1. **az140-cl-vm11a** へのリモート デスクトップ セッション内で、**コマンド プロンプト**を起動し、**コマンド プロンプト** ウィンドウから次のコマンドを実行して、ドライブをターゲット共有にマップします (`<storage-account-name>` プレースホルダーをストレージ アカウントの名前に置き換えます)。
 
    ```cmd
    net use Z: \\<storage-account-name>.file.core.windows.net\az140-22a-profiles

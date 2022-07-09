@@ -1,14 +1,9 @@
 ---
 lab:
-  title: ラボ:AVD (AD DS) 用のストレージを実装および管理する
+  title: 'ラボ:AVD (AD DS) 用のストレージを実装および管理する'
   module: 'Module 2: Implement a AVD Infrastructure'
-ms.openlocfilehash: b10b946e7824f2961be596e297a66b3afb6849da
-ms.sourcegitcommit: 9dfe7ec7ff74e5b72c02bb30a658ed8de52bfb44
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "145883973"
 ---
+
 # <a name="lab---implement-and-manage-storage-for-avd-ad-ds"></a>ラボ - AVD (AD DS) 用のストレージを実装および管理する
 # <a name="student-lab-manual"></a>受講生用ラボ マニュアル
 
@@ -52,7 +47,7 @@ Azure Active Directory ドメイン サービス (Azure AD DS) 環境で Azure V
 
 1. ラボのコンピューターから Web ブラウザーを起動し、[Azure portal](https://portal.azure.com) に移動し、このラボで使用するサブスクリプションの所有者の役割を持つユーザーアカウントの認証情報を提供してサインインします。
 1. Azure portal で、「**仮想マシン**」を検索して選択し、 **[Virtual Machines]** ブレードで、 **[az140-vm11]** を選択します。
-1. **[az140-dc-vm11]** ブレードで **[接続]** を選択し、ドロップダウン メニューで **[Bastion]** を選択し、 **[az140-dc-vm11 \| 接続]** ブレードの **[Bastion]** タブで **[Bastion を使用する]** を選択します。
+1. **[az140-dc-vm11]** ウィンドウで **[接続]** を選択し、ドロップダウン メニューで **[Bastion]** を選択し、 **[az140-dc-vm11 \| 接続]** ウィンドウの **[Bastion]** タブで **[Bastion を使用する]** を選択します。
 1. プロンプトが表示されたら、次の資格情報を入力し、 **[接続]** を選択します。
 
    |設定|値|
@@ -64,7 +59,7 @@ Azure Active Directory ドメイン サービス (Azure AD DS) 環境で Azure V
 1. **az140-dc-vm11** へのリモート デスクトップ セッション内で、Azure portal を表示している Microsoft Edge ウィンドウで「**ストレージ アカウント**」を検索して選択し、 **[ストレージ アカウント]** ブレードで **[+ 追加]** を選択します。
 1. **[ストレージ アカウントの作成]** ブレードの **[基本]** タブで、次の設定を指定します (他の設定は既定値のままにします)。
 
-   |設定|[値]|
+   |設定|値|
    |---|---|
    |サブスクリプション|このラボで使用している Azure サブスクリプションの名前|
    |リソース グループ|新しいリソース グループの名前 **az140-22-RG**|
@@ -86,7 +81,7 @@ Azure Active Directory ドメイン サービス (Azure AD DS) 環境で Azure V
 1. ストレージ アカウント ブレードの **[データ ストレージ]** セクションで、 **[ファイル共有]** を選択し、 **[+ ファイル共有]** を選択します。
 1. **[新しいファイル共有]** で、次の設定を指定し、 **[作成]** を選択します (他の設定は既定値のままにします)。
 
-   |設定|[値]|
+   |設定|値|
    |---|---|
    |名前|**az140-22-profiles**|
    |層|**トランザクションが最適化されました**|

@@ -1,11 +1,3 @@
----
-ms.openlocfilehash: db35f588faf44d2a422ebb98ff23a015e3ae9aa2
-ms.sourcegitcommit: 6a71f41d5cca19a259771c7ca3e588876dd8d9a9
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2022
-ms.locfileid: "145883958"
----
 # <a name="az-140-configuring-and-operating-microsoft-azure-virtual-desktop"></a>AZ-140:Microsoft Azure Virtual Desktop の構成と操作
 
 ## <a name="important"></a>重要

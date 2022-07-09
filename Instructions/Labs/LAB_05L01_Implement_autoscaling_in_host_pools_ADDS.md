@@ -1,14 +1,9 @@
 ---
 lab:
-  title: ラボ:ホスト プール (AD DS) での自動スケーリングの実装
-  module: 'Module 5: Monitor and Maintain a WVD Infrastructure'
-ms.openlocfilehash: cb5b88343bebc08c8de6709c0a7d06b2298882d7
-ms.sourcegitcommit: 2662f7a0156a1931cda5a8c1d4e5573a96df5fa1
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "146977072"
+  title: 'ラボ:ホスト プール (AD DS) での自動スケーリングの実装'
+  module: 'Module: Monitor and Maintain a WVD Infrastructure'
 ---
+
 # <a name="lab---implement-autoscaling-in-host-pools-ad-ds"></a>ラボ - ホスト プールに自動スケールを実装する (AD DS)
 # <a name="student-lab-manual"></a>受講生用ラボ マニュアル
 
@@ -153,7 +148,7 @@ Active Directory ドメイン サービス (AD DS) 環境で Azure Virtual Deskt
    >**注**:Webhook フィールドの値を記録します。 このラボで後ほど必要になります。
 
 1. Azure Automation アカウントの構成を確認するには、**az140-dc-vm11** へのリモート デスクトップ セッション内で、Microsoft Edge を起動して、[Azure portal](https://portal.azure.com) に移動します。 プロンプトが表示されたら、このラボで使用しているサブスクリプションで所有者の役割を持つユーザーアカウントの資格情報を使用してサインインします。
-1. **az140-dc-vm11** へのリモート デスクトップ セッション内で、Azure portal を表示している Microsoft Edge ウィンドウで、**Automationアカウント** を検索して選択し、**Automationアカウント** ブレードで、新しくプロビジョニングされたAzure Automation アカウント (名前は **az140-automation-51** プレフィックスで始まる) を表すエントリを選択します。
+1. **az140-dc-vm11** へのリモート デスクトップ セッション内で、Azure portal を表示している Microsoft Edge ウィンドウで、**Automationアカウント**を検索して選択し、**Automationアカウント** ブレードで、新しくプロビジョニングされたAzure Automation アカウント (名前は **az140-automation-51** プレフィックスで始まる) を表すエントリを選択します。
 1. [Automation Account] ブレードの左側の垂直メニューの **[Process Automation]** セクションで、 **[Runbooks]** を選択し、Runbook のリストで **WVDAutoScaleRunbookARMBased** Runbook の存在を確認します。
 1. [Automation Account] ブレードの左側の垂直メニューの **[アカウント設定]** セクションで、 **[アカウントとして実行]** を選択し、右側のアカウントのリストで、 **[+ Azure 実行アカウント]** の横にある **[作成]** をクリックします。
 1. **[Azure 実行アカウントの追加]** ブレードで、 **[作成]** をクリックし、新しいアカウントが正常に作成されたことを確認します。
@@ -257,14 +252,14 @@ Active Directory ドメイン サービス (AD DS) 環境で Azure Virtual Deskt
 #### <a name="task-1-verify-autoscaling-of-azure-virtual-desktop-session-hosts"></a>タスク 1:Azure Virtual Desktop セッションホストの自動スケールを確認する
 
 1. Azure Virtual Desktop セッション ホストの自動スケールを確認するには、**az140-dc-vm11** へのリモート デスクトップ セッション内の、Azure portal を表示している Microsoft Edge ウィンドウで、「**仮想マシン**」を検索して選択し、 **[仮想マシン]** ブレードで、**az140-21-RG** リソース グループ内の 3 つの Azure VM のステータスを確認します。
-1. 3 つの Azure VM のうち 2 つが割り当て解除の過程にあるか、すでに **停止 (割り当て解除)** されていることを確認します。
+1. 3 つの Azure VM のうち 2 つが割り当て解除の過程にあるか、すでに**停止 (割り当て解除)** されていることを確認します。
 
    >**注**:自動スケールが機能していることを確認したらすぐに、Azure Logic アプリを無効にして、対応する料金を最小限に抑える必要があります。
 
 1. Azure Logic アプリを無効にするには、**az140-dc-vm11** へのリモート デスクトップ セッション内で、Azure portal を表示する Microsoft Edge ウィンドウにで、**Logic Apps** を検索して選択し、 **[Logic Apps]** ブレードで、**az140-21-hp1_Autoscale_Scheduler** という名前の新しくプロビジョニングされた Azure Logic アプリを表すエントリを選択します。
 1. **[az140-21-hp1_Autoscale_Scheduler]** ブレードのツールバーで、 **[無効化]** をクリックします。 
 1. **[az140-21-hp1_Autoscale_Scheduler]** ブレードの **[Essentials]** セクションで、過去 24 時間の成功した実行の数や、再発の頻度を示す **[Summary]** セクションなどの情報を確認します。 
-1. **az140-dc-vm11** へのリモート デスクトップ セッション内で、Azure portal を表示している Microsoft Edge ウィンドウで、**Automationアカウント** を検索して選択し、**Automationアカウント** ブレードで、新しくプロビジョニングされたAzure Automation アカウント (名前は **az140-automation-51** プレフィックスで始まる) を表すエントリを選択します。
+1. **az140-dc-vm11** へのリモート デスクトップ セッション内で、Azure portal を表示している Microsoft Edge ウィンドウで、**Automationアカウント**を検索して選択し、**Automationアカウント** ブレードで、新しくプロビジョニングされたAzure Automation アカウント (名前は **az140-automation-51** プレフィックスで始まる) を表すエントリを選択します。
 1. **[Automation Account]** ブレードの左側の垂直メニューの **[Process Automation]** セクションで、 **[ジョブ]** を選択し、**WVDAutoScaleRunbookARMBased** Runbook の個々の呼び出しに対応するジョブのリストを確認します。
 1. 最新のジョブを選択し、そのブレードで **[すべてのログ]** タブのヘッダーをクリックします。 これにより、ジョブ実行ステップの詳細なリストが表示されます。
 
@@ -272,7 +267,7 @@ Active Directory ドメイン サービス (AD DS) 環境で Azure Virtual Deskt
 
 >**注**:自動スケールやその他の Azure Virtual Desktop イベントを分析するには、Log Analytics を使用できます。
 
-1. **az140-dc-vm11** へのリモート デスクトップ セッション内で、Azure portal を表示している Microsoft Edge ウィンドウで、**Log Analytics ワークスペース** を検索して選択し、 **[Log Analytics ワークスペース]** ブレードで、このラボで使用されている Azure Log Analytics ワークスペースを表すエントリを選択します (名前は **az140-workspace-51** プレフィックスで始まります)。
+1. **az140-dc-vm11** へのリモート デスクトップ セッション内で、Azure portal を表示している Microsoft Edge ウィンドウで、**Log Analytics ワークスペース**を検索して選択し、 **[Log Analytics ワークスペース]** ブレードで、このラボで使用されている Azure Log Analytics ワークスペースを表すエントリを選択します (名前は **az140-workspace-51** プレフィックスで始まります)。
 1. [Log Analytics ワークスペース] ブレードの左側の垂直メニューの **[全般]** セクションで、 **[ログ]** をクリックし、必要に応じて **[Log Analytics へようこそ]** ウィンドウを閉じ、 **[クエリ]** ペインに進みます。
 1. **[クエリ]** ペインの左側にある **[すべてのクエリ]** 垂直メニューで、 **[Azure Virtual Desktop]** を選択し、事前定義されたクエリを確認します。
 1. **[クエリ]** ペインを閉じます。 これにより、 **[新しいクエリ 1]** タブが自動的に表示されます。

@@ -1,14 +1,9 @@
 ---
 lab:
-  title: ラボ:Azure Virtual Desktop (AD DS) のデプロイの準備
+  title: 'ラボ:Azure Virtual Desktop (AD DS) のデプロイの準備'
   module: 'Module 1: Plan a AVD Architecture'
-ms.openlocfilehash: 2cdd14abd13859b585ed6b4f824c96200d725a46
-ms.sourcegitcommit: b12004c91203c686a4709018f72e0ef74a4ac15f
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "147019890"
 ---
+
 # <a name="lab---prepare-for-deployment-of-azure-virtual-desktop-ad-ds"></a>ラボ - Azure Virtual Desktop (AD DS) のデプロイを準備する
 # <a name="student-lab-manual"></a>受講生用ラボ マニュアル
 
@@ -79,11 +74,11 @@ Active Directory ドメイン サービス (AD DS) 環境でのデプロイの�
 
    > **注**:Azure リージョンの名前を識別するには、**Cloud Shell** の PowerShell プロンプトで `(Get-AzLocation).Location` を実行します。
    
-1. 前の手順で実行したコマンドの出力を確認し、ターゲット Azure リージョンの Azure VM の **Standard DSv3 Family vCPU** と **Standard BS Family vCPU** の両方に少なくとも **30** 個の使用可能な vCPU があることを保証します。 それがすでに当てはまる場合は、次の演習に直接進んでください。 それ以外の場合は、この演習の次のタスクに進みます。 
+1. 前の手順で実行したコマンドの出力を確認し、ターゲット Azure リージョンの Azure VM の **Standard DSv3 Family** と **StandardBSFamily** の両方に少なくとも **30** 個の使用可能な vCPU があることを確認します。 それがすでに当てはまる場合は、次の演習に直接進んでください。 それ以外の場合は、この演習の次のタスクに進みます。 
 
 #### <a name="task-2-request-vcpu-quota-increase"></a>タスク 2:vCPU クォータの増加を要求する
 
-1. Azure portal で、**[サブスクリプション]** を検索して選択し、 **[サブスクリプション]** ブレードから、このラボで使用する予定の Azure サブスクリプションを表すエントリを選択します。
+1. Azure portal で、「**サブスクリプション**」を検索して選択し、 **[サブスクリプション]** ブレードから、このラボで使用する予定の Azure サブスクリプションを表すエントリを選択します。
 1. Azure portal のサブスクリプション ブレードの左側の垂直メニューの **[設定]** セクションで、 **[使用量 + クォータ]** を選択します。 
 
    **注:**  クォータを増やすためにサポート チケットを提出する必要はない可能性があります。
@@ -140,7 +135,7 @@ Active Directory ドメイン サービス (AD DS) 環境でのデプロイの�
    |リソース グループ|**az140-11-RG**|
    |ドメイン名|**adatum.com**|
 
-1. **[Create an Azure VM with a new AD Forest]\(新しい AD フォレストを使用して Azure VM を作成する\)** ブレードで、 **[確認および作成]** を選択し、 **[作成]** を選択します。
+1. **[Create an Azure VM with a new AD Forest](新しい AD フォレストを使用して Azure VM を作成する)** ブレードで、 **[確認および作成]** を選択し、 **[作成]** を選択します。
 
    > **注**: このデプロイが完了するまで待ってから、次の演習に進んでください。 これには 15 分ほどかかる場合があります。 
 
@@ -180,7 +175,7 @@ Active Directory ドメイン サービス (AD DS) 環境でのデプロイの�
 > **注**:ブラウザーでポップアップ機能が有効になっていることを確認します。
 
 1. Azure portal が表示されているブラウザー ウィンドウで、別のタブを開き、そのブラウザー タブで Azure portal に移動します。
-1. Azure portal で、検索テキストボックスのすぐ右にあるツール バー アイコンを選択して、**Cloud Shell** ペインを開きます。
+1. Azure portal で、検索テキストボックスのすぐ右にあるツール バー アイコンを選択して、**Cloud Shell**ペインを開きます。
 1. Cloud Shell ペインの PowerShell セッションから次のように実行して、この演習で先ほど作成した仮想ネットワーク **az140-adds-vnet11** に **AzureBastionSubnet** という名前のサブネットを追加します。
 
    ```powershell
@@ -225,7 +220,7 @@ Active Directory ドメイン サービス (AD DS) 環境でのデプロイの�
 
 #### <a name="task-1-create-ad-ds-users-and-groups-that-will-be-synchronized-to-azure-ad"></a>タスク 1:Azure AD と同期する AD DS ユーザーとグループを作成する
 
-1. ラボ コンピューターの Azure portal が表示されている Web ブラウザーで、**[仮想マシン]** を検索して選択し、 **[仮想マシン]** ブレードから **az140-dc-vm11** を選択します。
+1. ラボ コンピューターの Azure portal が表示されている Web ブラウザーで、「**仮想マシン**」を検索して選択し、 **[仮想マシン]** ブレードから **az140-dc-vm11** を選択します。
 1. **[az140-dc-vm11]** ウィンドウで **[接続]** を選択し、ドロップダウン メニューで **[Bastion]** を選択し、 **[az140-dc-vm11 \| 接続]** ウィンドウの **[Bastion]** タブで **[Bastion を使用する]** を選択します。
 1. プロンプトが表示されたら、次の資格情報を入力し、 **[接続]** を選択します。
 
@@ -268,14 +263,14 @@ Active Directory ドメイン サービス (AD DS) 環境でのデプロイの�
    foreach ($counter in $userCount) {
      New-AdUser -Name $adUserNamePrefix$counter -Path $ouPath -Enabled $True `
        -ChangePasswordAtLogon $false -userPrincipalName $adUserNamePrefix$counter@$adUPNSuffix `
-       -AccountPassword (ConvertTo-SecureString '<password>' -AsPlainText -Force) -passThru
+       -AccountPassword (ConvertTo-SecureString "<password>" -AsPlainText -Force) -passThru
    } 
 
    $adUserNamePrefix = 'wvdadmin1'
    $adUPNSuffix = 'adatum.com'
    New-AdUser -Name $adUserNamePrefix -Path $ouPath -Enabled $True `
        -ChangePasswordAtLogon $false -userPrincipalName $adUserNamePrefix@$adUPNSuffix `
-       -AccountPassword (ConvertTo-SecureString '<password>' -AsPlainText -Force) -passThru
+       -AccountPassword (ConvertTo-SecureString "<password>" -AsPlainText -Force) -passThru
 
    Get-ADGroup -Identity 'Domain Admins' | Add-AdGroupMember -Members 'wvdadmin1'
    ```
