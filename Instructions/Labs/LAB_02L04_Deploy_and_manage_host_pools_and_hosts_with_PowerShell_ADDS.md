@@ -1,6 +1,6 @@
 ---
 lab:
-  title: 'ラボ:PowerShell を使用してホスト プールおよびホストをデプロイする'
+  title: 'ラボ:PowerShell を使用してホスト プールとホストをデプロイおよび管理する (AD DS)'
   module: 'Module 2: Implement a WVD Infrastructure'
 ---
 

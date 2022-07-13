@@ -1,7 +1,7 @@
 ---
 lab:
   title: 'ラボ:ホスト プール (AD DS) での自動スケーリングの実装'
-  module: 'Module: Monitor and Maintain a WVD Infrastructure'
+  module: 'Module 5: Monitor and Maintain a WVD Infrastructure'
 ---
 
 # <a name="lab---implement-autoscaling-in-host-pools-ad-ds"></a>ラボ - ホスト プールに自動スケールを実装する (AD DS)

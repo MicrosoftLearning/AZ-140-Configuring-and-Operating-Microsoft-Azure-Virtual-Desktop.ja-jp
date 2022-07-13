@@ -1,6 +1,6 @@
 ---
 lab:
-  title: 'ラボ:Azure Resource Manager テンプレートを使用してホスト プールおよびホストをデプロイする'
+  title: 'ラボ:Azure Resource Manager テンプレート (AD DS) を使用してホスト プールおよびホストをデプロイする'
   module: 'Module 2: Implement a WVD Infrastructure'
 ---
 
