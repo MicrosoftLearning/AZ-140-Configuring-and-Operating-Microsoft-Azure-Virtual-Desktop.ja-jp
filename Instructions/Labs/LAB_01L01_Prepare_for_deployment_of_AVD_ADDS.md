@@ -130,9 +130,9 @@ Active Directory ドメイン サービス (AD DS) 環境でのデプロイの�
 #### タスク 1: Azure VM のデプロイの準備
 
 1. ラボ コンピューターから、Web ブラウザーを起動し、[Azure portal](https://portal.azure.com) に移動し、このラボで使用するサブスクリプションの所有者ロールを持つユーザー アカウントの資格情報を指定してサインインします。
-1. Azure portal を表示している Web ブラウザーで、「**概要**」ブレードに戻り、左側の垂直メニューバーの「**管理**」セクションで、「**プロパティ**」をクリックします。
-1. Azure AD テナントの「**プロパティ**」ブレードで、ブレードの一番下で、「**セキュリティ詳細の管理**」リンクをクリックします。
-1. 「**セキュリティ既定値の有効化**」ブレードで、必要に応じて、「**いいえ**」を選択し、「**私の組織は条件付きアクセスを使用しています**」チェックボックスを選択して、「**保存**」を選択します。
+1. Azure portal を表示している Web ブラウザーで、Azure Active Directory の「**概要**」ブレードを表示し、左側の垂直メニューバーの「**管理**」セクションで、「**プロパティ**」をクリックします。
+1. Azure AD テナントの「**プロパティ**」ブレードで、ブレードの一番下で、「**セキュリティ既定値の管理**」リンクをクリックします。
+1. 「**セキュリティ既定値の有効化**」ブレードで、「**いいえ**」を選択し、必要に応じて、「**私の組織は条件付きアクセスを使用しています**」チェックボックスを選択して、「**保存**」を選択します。
 1. Azure portal で、検索テキストボックスのすぐ右にあるツールバー アイコンを選択して **「Cloud Shell」** ペインを開きます。
 1. **Bash** や **PowerShell** のどちらかを選択するためのプロンプトが表示されたら、**PowerShell** を選択します。 
 
@@ -151,16 +151,16 @@ Active Directory ドメイン サービス (AD DS) 環境でのデプロイの�
 
 1. Azure portal で、**Cloud Shell** ウィンドウを閉じます。
 1. ラボ コンピューターの同じブラウザー ウィンドウで、別な Web ブラウザー ウィンドウを開き、[新しい Windows VM を作成し、新しい AD Forest、Domain、DC を作成する](https://github.com/az140mp/azure-quickstart-templates/tree/master/application-workloads/active-directory/active-directory-new-domain)という名前の QuickStart テンプレートのカスタマイズされたバージョンに移動します。 
-1. 「**新しい Windows VM を作成し、新しい AD フォレスト、ドメイン、DC を作成する**」 ページで、「**Azure にデプロイする**」 を選択します。これにより、ブラウザーが Azure portal の「**新しい AD フォレストで Azure VM を作成する**」ブレードに自動的にリダイレクトされます。
-1. 「**新しい AD フォレストで Azure VM を作成する**」 ブレードで、「**パラメーターの編集**」 を選択します。
-1. 「**パラメーターの編集**」 ブレードで、「**ロード ファイル**」 を選択し、「**開く**」 ダイアログ ボックスで、「**\\\\AZ-140\\AllFiles\\Labs\\01\\az140-11_azuredeploydc11.parameters.json**」 を選択し、「**開く**」 を選択してから、「**保存**」 を選択します。 
-1. 「**新しい AD フォレストを使用して Azure VM を作成する**」ブレードで、次の設定を指定します (他のユーザーには既存の値を残します)。
+1. 「**Create a new Windows VM and create a new AD Forest, Domain and DC**」 ページで、「**Deploy to Azure**」 を選択します。これにより、ブラウザーが Azure portal の「**Create an Azure VM with a new AD Forest**」ブレードに自動的にリダイレクトされます。
+1. 「**Create an Azure VM with a new AD Forest**」 ブレードで、「**パラメーターの編集**」 を選択します。
+1. 「**パラメーターの編集**」 ブレードで、「**ファイルの読み込み**」 を選択し、「**開く**」 ダイアログ ボックスで、「**\\\\AZ-140\\AllFiles\\Labs\\01\\az140-11_azuredeploydc11.parameters.json**」 を選択し、「**開く**」 を選択してから、「**保存**」 を選択します。 
+1. 「**Create an Azure VM with a new AD Forest**」ブレードで、次の設定を指定します (他のユーザーには既存の値を残します)。
 
    |設定|値|
    |---|---|
    |サブスクリプション|このラボで使用する Azure サブスクリプションの名前|
    |リソース グループ|**az140-11-RG**|
-   |ドメイン名|**adatum.com**|
+   |Domain Name|**adatum.com**|
 
 1. 「**新しい AD フォレストを使用して Azure VM を作成する**」 ブレードで、「**確認および作成**」 を選択し、「**作成**」 を選択します。
 
@@ -180,7 +180,7 @@ Active Directory ドメイン サービス (AD DS) 環境でのデプロイの�
    $vnet | Set-AzVirtualNetwork
    ```
 
-1. Azure portal の Cloud Shell ペインのツールバーで、「**ファイルのアップロード/ダウンロード**」 アイコンを選択し、ドロップダウン メニューで 「**アップロード**」 を選択し、ファイル **\\\\AZ-140\\AllFiles\\Labs\\01\\az140-11_azuredeploycl11a.json** および **\\\\AZ-140\\AllFiles\\Labs\\01\\az140-11_azuredeploycl11.parameters.json** を Cloud Shell ホーム ディレクトリにアップロードします。
+1. Azure portal の Cloud Shell ペインのツールバーで、「**ファイルのアップロード/ダウンロード**」 アイコンを選択し、ドロップダウン メニューで 「**アップロード**」 を選択し、ファイル **\\\\AZ-140\\AllFiles\\Labs\\01\\az140-11_azuredeploycl11.json** および **\\\\AZ-140\\AllFiles\\Labs\\01\\az140-11_azuredeploycl11.parameters.json** を Cloud Shell ホーム ディレクトリにアップロードします。
 1. Cloud Shell ペインの PowerShell セッションから、次のコマンドを実行して、クライアントとして機能する Windows 10 を実行している Azure VM を新しく作成されたサブネットにデプロイします。
 
    ```powershell
@@ -290,14 +290,14 @@ Active Directory ドメイン サービス (AD DS) 環境でのデプロイの�
    foreach ($counter in $userCount) {
      New-AdUser -Name $adUserNamePrefix$counter -Path $ouPath -Enabled $True `
        -ChangePasswordAtLogon $false -userPrincipalName $adUserNamePrefix$counter@$adUPNSuffix `
-       -AccountPassword (ConvertTo-SecureString <password> -AsPlainText -Force) -passThru
+       -AccountPassword (ConvertTo-SecureString "<password>" -AsPlainText -Force) -passThru
    } 
 
    $adUserNamePrefix = 'wvdadmin1'
    $adUPNSuffix = 'adatum.com'
    New-AdUser -Name $adUserNamePrefix -Path $ouPath -Enabled $True `
        -ChangePasswordAtLogon $false -userPrincipalName $adUserNamePrefix@$adUPNSuffix `
-       -AccountPassword (ConvertTo-SecureString <password> -AsPlainText -Force) -passThru
+       -AccountPassword (ConvertTo-SecureString "<password>" -AsPlainText -Force) -passThru
 
    Get-ADGroup -Identity 'Domain Admins' | Add-AdGroupMember -Members 'wvdadmin1'
    ```
