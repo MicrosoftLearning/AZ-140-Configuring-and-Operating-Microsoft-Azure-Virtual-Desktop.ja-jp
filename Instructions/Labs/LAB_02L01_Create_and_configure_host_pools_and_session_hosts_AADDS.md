@@ -1,14 +1,9 @@
 ---
 lab:
-  title: ラボ:ホスト プールとセッション ホストを作成および構成する (Azure AD DS)
+  title: 'ラボ:ホスト プールとセッション ホストを作成および構成する (Azure AD DS)'
   module: 'Module 2: Implement a AVD Infrastructure'
-ms.openlocfilehash: 329aecb18aa4d3232eaac6c4823fbcb7eb271731
-ms.sourcegitcommit: 040b38677ab4bfb0bf430a8797aaa8f524dc501c
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "145883985"
 ---
+
 # <a name="lab---create-and-configure-host-pools-and-session-hosts-azure-ad-ds"></a>ラボ - ホスト プールとセッション ホストを作成および構成する (Azure AD DS)
 # <a name="student-lab-manual"></a>受講生用ラボ マニュアル
 
@@ -51,8 +46,8 @@ Azure Active Directory ドメインサービス (Azure AD DS) 環境でホスト
 #### <a name="task-1-prepare-ad-ds-domain-and-the-azure-subscription-for-deployment-of-an-azure-virtual-desktop-host-pool"></a>タスク 1:Azure Virtual Desktop ホスト プールのデプロイ用の AD DS ドメインと Azure サブスクリプションを準備する
 
 1. ラボのコンピューターから Web ブラウザーを起動し、[Azure portal](https://portal.azure.com) に移動し、このラボで使用するサブスクリプションの所有者の役割を持つユーザーアカウントの認証情報を提供してサインインします。
-1. ラボ コンピューターの Azure portal で、「**仮想マシン**」を検索して選択し、 **[仮想マシン]** ブレードから **[az140-cl-vm11a]** エントリを選択します。 これにより、**az140-cl-vm11a** ブレードが開きます。
-1. **[az140-cl-vm11a]** ブレードで **[接続]** を選択し、ドロップダウン メニューで **[Bastion]** を選択し、 **[az140-cl-vm11a \| 接続]** ブレードの **[Bastion]** タブで **[Bastion を使用する]** を選択します。
+1. ラボ コンピューターの Azure portal で、「**仮想マシン**」を検索して選択し、 **[仮想マシン]** ブレードから **az140-cl-vm11a** エントリを選択します。 これにより、**az140-cl-vm11a** ブレードが開きます。
+1. **[az140-cl-vm11a]** ウィンドウで **[接続]** を選択し、ドロップダウン メニューで **[Bastion]** を選択し、 **[az140-cl-vm11a \| 接続]** ウィンドウの **[Bastion]** タブで **[Bastion を使用する]** を選択します。
 1. プロンプトが表示されたら、次の資格情報を入力し、 **[接続]** を選択します。
 
    |設定|値|
@@ -70,7 +65,7 @@ Azure Active Directory ドメインサービス (Azure AD DS) 環境でホスト
    Register-AzResourceProvider -ProviderNamespace Microsoft.DesktopVirtualization
    ```
 
-1. **az140-cl-vm11a** へのリモート デスクトップ セッション内で、Azure portal を表示している Microsoft Edge で、**仮想ネットワーク** を検索して選択し、 **[仮想ネットワーク]** ブレードから **az140-aadds-vnet11a** エントリを選択します。 
+1. **az140-cl-vm11a** へのリモート デスクトップ セッション内で、Azure portal を表示している Microsoft Edge で、**仮想ネットワーク**を検索して選択し、 **[仮想ネットワーク]** ブレードから **az140-aadds-vnet11a** エントリを選択します。 
 1. **az140-aadds-vnet11a** ブレードで、 **[サブネット]** を選択し、 **[サブネット]** ブレードで、 **[+ サブネット]** を選択し、 **[サブネットの追加]** ブレードで、 **[名前]** テキストボックスに「**hp1-Subnet**」と入力し、他のすべての設定を既定値のままにして、 **[保存]** を選択します。 
 
 #### <a name="task-2-deploy-an-azure-virtual-desktop-host-pool"></a>タスク 2:Azure Virtual Desktop ホスト プールをデプロイする
@@ -78,7 +73,7 @@ Azure Active Directory ドメインサービス (Azure AD DS) 環境でホスト
 1. **az140-cl-vm11a** へのリモート デスクトップ セッション内で、Azure portal を表示している Microsoft Edge ウィンドウ内にある **[Azure Virtual Desktop]** を選択し、 **[Azure Virtual Desktop]** ブレードの左側の垂直メニューの **[管理]** セクションで **[ホスト プール]** を選択し、 **[Azure Virtual Desktop \| Host pools]** ブレードで **[+ 作成]** を選択します。 
 1. **[ホスト プールの作成]** ブレードの **[基本]** タブで、次の設定を指定し、 **[次へ: 仮想マシン >]** を選択します。
 
-   |設定|[値]|
+   |設定|値|
    |---|---|
    |サブスクリプション|このラボで使用している Azure サブスクリプションの名前|
    |リソース グループ|新しいリソース グループの名前 **az140-21a-RG**|
@@ -139,7 +134,7 @@ Azure Active Directory ドメインサービス (Azure AD DS) 環境でホスト
 1. **[Azure Virtual Desktop \| アプリケーション グループ]** ブレードに戻り、 **[+ 追加]** を選択します。
 1. **[アプリケーション グループの作成]** ブレードの **[基本]** タブで、次の設定を指定して、 **[次へ: アプリケーション >]** を選択します。
 
-   |設定|[値]|
+   |設定|値|
    |---|---|
    |サブスクリプション|このラボで使用している Azure サブスクリプションの名前|
    |リソース グループ|**az140-21a-RG**|
@@ -195,7 +190,7 @@ Azure Active Directory ドメインサービス (Azure AD DS) 環境でホスト
 1. **[Azure Virtual Desktop \| アプリケーション グループ]** ブレードで、 **[+ 作成]** を選択します。 
 1. **[アプリケーション グループの作成]** ブレードの **[基本]** タブで、次の設定を指定して、 **[次へ: アプリケーション >]** を選択します。
 
-   |設定|[値]|
+   |設定|値|
    |---|---|
    |サブスクリプション|このラボで使用している Azure サブスクリプションの名前|
    |リソース グループ|**az140-21a-RG**|
@@ -235,7 +230,7 @@ Azure Active Directory ドメインサービス (Azure AD DS) 環境でホスト
 1. **[Azure Virtual Desktop \| ワークスペース]** ブレードで、 **[+ 作成]** を選択します。 
 1. **[ワークスペースの作成]** ブレードの **[基本]** タブで、 **[次へ: アプリケーション グループ >]** を選択します。
 
-   |設定|[値]|
+   |設定|値|
    |---|---|
    |サブスクリプション|このラボで使用している Azure サブスクリプションの名前|
    |リソース グループ|**az140-21a-RG**|
@@ -273,7 +268,7 @@ Azure Active Directory ドメインサービス (Azure AD DS) 環境でホスト
 
    > **注**:または、 **[リモート デスクトップ]** クライアント ウィンドウで **[URL でサブスクライブ]** を選択し、 **[ワークスペースのサブスクライブ]**  ペインの **[電子メール] または [ワークスペース URL]** に「 **https://rdweb.wvd.microsoft.com/api/arm/feeddiscovery** 」と入力して、 **[次へ]** を選択します。プロンプトが表示されたら、**aaduser1** 資格情報を使用してサインインします (userPrincipalName 属性をユーザー名として使用し、「**Pa55w.rd1234**」をパスワードとして使用します)。 
 
-   > **注**:**aaduser1** のユーザー プリンシパル名は **aaduser1@** _<Azure_AD_domain_name>_ の形式である必要があります。ここで、 *<Azure_AD_domain_name>* プレースホルダーは、Azure ADDS インスタンスをデプロイしたサブスクリプションに関連付けられた Azure AD テナントの名前と一致します。
+   > **注**:**aaduser1** のユーザー プリンシパル名は *aaduser1@***<Azure_AD_domain_name>* の形式である必要があります。ここで、 *<Azure_AD_domain_name>* プレースホルダーは、Azure ADDS インスタンスをデプロイしたサブスクリプションに関連付けられた Azure AD テナントの名前と一致します。
 
 1. **[すべてのアプリにサインインしたままにする]** ウィンドウで、 **[組織にデバイスの管理を許可する]** チェックボックスをオフにして、 **[いいえ、このアプリのみにサインインします]** を選択します。 
 1. **[リモート デスクトップ]** ページに、グループ メンバーシップを介してユーザー アカウント **aaduser1** に関連付けられているアプリケーション グループに含まれているアプリケーションのリストが表示されていることを確認します。 
