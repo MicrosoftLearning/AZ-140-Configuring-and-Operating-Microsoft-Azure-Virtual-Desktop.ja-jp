@@ -47,7 +47,7 @@ Azure Active Directory ドメインサービス (AD DS) 環境でホスト プ�
 #### <a name="task-1-prepare-ad-ds-domain-and-the-azure-subscription-for-deployment-of-an-azure-virtual-desktop-host-pool"></a>タスク 1:Azure Virtual Desktop ホスト プールのデプロイ用の AD DS ドメインと Azure サブスクリプションを準備する
 
 1. ラボのコンピューターから Web ブラウザーを起動し、[Azure portal]( ) に移動し、このラボで使用するサブスクリプションの所有者の役割を持つユーザーアカウントの認証情報を提供してサインインします。
-1. Azure portal で、「**仮想マシン**」を検索して選択し、 **[Virtual Machines]** ブレードで、 **[az140-vm11]** を選択します。
+1. Azure portal で、「**仮想マシン**」を検索して選択し、 **[Virtual Machines]** ブレードで、 **[az140-dc-vm11]** を選択します。
 1. **[az140-dc-vm11]** ウィンドウで **[接続]** を選択し、ドロップダウン メニューで **[Bastion]** を選択し、 **[az140-dc-vm11 \| 接続]** ウィンドウの **[Bastion]** タブで **[Bastion を使用する]** を選択します。
 1. プロンプトが表示されたら、次の資格情報を入力し、 **[接続]** を選択します。
 
