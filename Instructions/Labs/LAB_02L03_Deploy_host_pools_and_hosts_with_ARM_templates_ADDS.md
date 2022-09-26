@@ -56,7 +56,7 @@ Azure Resource Manager テンプレートを使用して、Azure Virtual Desktop
 
    |設定|値|
    |---|---|
-   |[ユーザー名]|**学生**|
+   |[ユーザー名]|**Student**|
    |パスワード|**Pa55w.rd1234**|
 
 1. **az140-dc-vm11** へのリモート デスクトップ セッション内で、**Windows PowerShell ISE** を管理者として起動します。
