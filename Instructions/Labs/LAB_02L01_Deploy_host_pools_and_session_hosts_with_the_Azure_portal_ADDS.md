@@ -134,7 +134,7 @@ Azure Active Directory ドメインサービス (AD DS) 環境でホスト プ�
    |特定のドメインまたはユニット|**あり**|
    |参加するドメイン|**adatum.com**|
    |組織単位パス|**OU=WVDInfra,DC=adatum,DC=com**|
-   |ユーザー名|**学生**|
+   |ユーザー名|**Student**|
    |パスワード|**Pa55w.rd1234**|
    |[パスワードの確認入力]|**Pa55w.rd1234**|
 
