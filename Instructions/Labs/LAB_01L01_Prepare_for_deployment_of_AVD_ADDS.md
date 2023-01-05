@@ -48,12 +48,13 @@ Active Directory ドメイン サービス (AD DS) 環境でのデプロイの�
 1. Azure portal で、検索テキストボックスのすぐ右にあるツールバー アイコンを選択して **Cloud Shell** ペインを開きます。
 1. **Bash** または **PowerShell** の選択を求めるメッセージが表示されたら、 **[PowerShell]** を選択します。 
 
-   >**注**: **Cloud Shell** を初めて起動し、"**ストレージがマウントされていません**" というメッセージが表示された場合は、このラボで使用しているサブスクリプションを選択し、**[ストレージの作成]** を選択します。 
+   >**注**: **Cloud Shell** を初めて起動し、[**ストレージがマウントされていません**] というメッセージが表示された場合は、このラボで使用しているサブスクリプションを選択し、**[ストレージの作成]** を選択します。 
 
-1. **Microsoft.Compute** リソース プロバイダーが登録されていない場合は、Azure portal の **Cloud Shell** の PowerShell で、次のコマンドを実行して登録します。
+1. **Microsoft.Compute** および **Microsoft.Network** リソース プロバイダーが登録されていない場合は、Azure portal の **Cloud Shell** の PowerShell セッションで次を実行して、それらを登録します。
 
    ```powershell
    Register-AzResourceProvider -ProviderNamespace 'Microsoft.Compute'
+   Register-AzResourceProvider -ProviderNamespace 'Microsoft.Network'
    ```
 
 1. Azure portal の **Cloud Shell** の PowerShell で、次のコマンドを実行して、**Microsoft.Compute** リソース プロバイダーの登録の状態を確認します。
@@ -135,7 +136,7 @@ Active Directory ドメイン サービス (AD DS) 環境でのデプロイの�
    |リソース グループ|**az140-11-RG**|
    |ドメイン名|**adatum.com**|
 
-1. **[Create an Azure VM with a new AD Forest]\(新しい AD フォレストを使用して Azure VM を作成する\)** ブレードで、 **[確認および作成]** を選択し、 **[作成]** を選択します。
+1. **[Create an Azure VM with a new AD Forest](新しい AD フォレストを使用して Azure VM を作成する)** ブレードで、 **[確認および作成]** を選択し、 **[作成]** を選択します。
 
    > **注**: このデプロイが完了するまで待ってから、次の演習に進んでください。 これには 15 分ほどかかる場合があります。 
 
@@ -222,7 +223,7 @@ Active Directory ドメイン サービス (AD DS) 環境でのデプロイの�
 
 1. ラボ コンピューターの Azure portal が表示されている Web ブラウザーで、**[仮想マシン]** を検索して選択し、 **[仮想マシン]** ブレードから **az140-dc-vm11** を選択します。
 1. **[az140-dc-vm11]** ウィンドウで **[接続]** を選択し、ドロップダウン メニューで **[Bastion]** を選択し、 **[az140-dc-vm11 \| 接続]** ウィンドウの **[Bastion]** タブで **[Bastion を使用する]** を選択します。
-1. プロンプトが表示されたら、次の資格情報を入力し、 **[接続]** を選択します。
+1. プロンプトが表示されたら、次の資格情報を入力し、**[接続]** を選択します。
 
    |設定|値|
    |---|---|
@@ -263,14 +264,14 @@ Active Directory ドメイン サービス (AD DS) 環境でのデプロイの�
    foreach ($counter in $userCount) {
      New-AdUser -Name $adUserNamePrefix$counter -Path $ouPath -Enabled $True `
        -ChangePasswordAtLogon $false -userPrincipalName $adUserNamePrefix$counter@$adUPNSuffix `
-       -AccountPassword (ConvertTo-SecureString "<password>" -AsPlainText -Force) -passThru
+       -AccountPassword (ConvertTo-SecureString '<password>' -AsPlainText -Force) -passThru
    } 
 
    $adUserNamePrefix = 'wvdadmin1'
    $adUPNSuffix = 'adatum.com'
    New-AdUser -Name $adUserNamePrefix -Path $ouPath -Enabled $True `
        -ChangePasswordAtLogon $false -userPrincipalName $adUserNamePrefix@$adUPNSuffix `
-       -AccountPassword (ConvertTo-SecureString "<password>" -AsPlainText -Force) -passThru
+       -AccountPassword (ConvertTo-SecureString '<password>' -AsPlainText -Force) -passThru
 
    Get-ADGroup -Identity 'Domain Admins' | Add-AdGroupMember -Members 'wvdadmin1'
    ```
