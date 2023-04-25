@@ -230,7 +230,7 @@ Active Directory ドメイン サービス (AD DS) 環境でのデプロイの�
 
    |設定|値|
    |---|---|
-   |[ユーザー名]|**学生**|
+   |[ユーザー名]|**Student**|
    |パスワード|**Pa55w.rd1234**|
 
 1. **az140-dc-vm11** へのリモート デスクトップ セッション内で、**Windows PowerShell ISE** を管理者として起動します。
@@ -423,7 +423,7 @@ Active Directory ドメイン サービス (AD DS) 環境でのデプロイの�
    ```
    
 1. **az140-dc-vm11** へのリモート デスクトップ セッション内で、Internet Explorer を起動して、[Microsoft Edge for Business のダウンロード ページ](https://www.microsoft.com/en-us/edge/business/download)に移動します。
-1. az140-dc-vm11 へのリモート デスクトップ セッション内で、Internet Explorer を起動し、[Microsoft Edge for Business のダウンロードページ](https://www.microsoft.com/en-us/edge/business/download)に移動します。
+1. Microsoft Edge for Business download ページから最新の安定板の Microsoft Edge をダウンロードしてインストールし、起動してデフォルトの設定でセットアップします。
 1. **az140-dc-vm11** へのリモート デスクトップ セッション内で、Microsoft Edge を使用し、[Azure portal](https://portal.azure.com) に移動します。 プロンプトが表示されたら、このラボで使用しているサブスクリプションで所有者の役割を持つユーザーアカウントの資格情報を使用してサインインします。
 1. Azure portal で、Azure portal ページの上部にある **[リソース、サービス、ドキュメントの検索]** テキスト ボックスを使用して、**Azure Active Directory** ブレードを検索して移動し、Azure AD テナント ブレードのハブ メニューの **[管理]** セクションで、 **[Azure AD Connect]** を選択します。
 1. **[Azure AD Connect]** ブレードで、最初に **[同期の接続]** リンクを選択し、 **[Azure AD Connect のダウンロード]** リンクを選択します。 これにより、**Microsoft Azure Active Directory Connect** のダウンロード ページを表示する新しいブラウザー タブが自動的に開きます。

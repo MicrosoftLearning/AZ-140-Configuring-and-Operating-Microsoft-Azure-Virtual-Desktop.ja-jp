@@ -47,13 +47,13 @@ Azure Active Directory ドメインサービス (AD DS) 環境でホスト プ�
 #### <a name="task-1-prepare-ad-ds-domain-and-the-azure-subscription-for-deployment-of-an-azure-virtual-desktop-host-pool"></a>タスク 1:Azure Virtual Desktop ホスト プールのデプロイ用の AD DS ドメインと Azure サブスクリプションを準備する
 
 1. ラボのコンピューターから Web ブラウザーを起動し、[Azure portal]( ) に移動し、このラボで使用するサブスクリプションの所有者の役割を持つユーザーアカウントの認証情報を提供してサインインします。
-1. Azure portal で、「**仮想マシン**」を検索して選択し、 **[Virtual Machines]** ブレードで、 **[az140-vm11]** を選択します。
+1. Azure portal で、「**仮想マシン**」を検索して選択し、 **[Virtual Machines]** ブレードで、 **[az140-dc-vm11]** を選択します。
 1. **[az140-dc-vm11]** ウィンドウで **[接続]** を選択し、ドロップダウン メニューで **[Bastion]** を選択し、 **[az140-dc-vm11 \| 接続]** ウィンドウの **[Bastion]** タブで **[Bastion を使用する]** を選択します。
 1. プロンプトが表示されたら、次の資格情報を入力し、 **[接続]** を選択します。
 
    |設定|値|
    |---|---|
-   |[ユーザー名]|**学生**|
+   |[ユーザー名]|**Student**|
    |パスワード|**Pa55w.rd1234**|
 
 1. **az140-dc-vm11** へのリモート デスクトップ セッション内で、**Windows PowerShell ISE** を管理者として起動します。
@@ -135,7 +135,7 @@ Azure Active Directory ドメインサービス (AD DS) 環境でホスト プ�
    |特定のドメインまたはユニット|**あり**|
    |参加するドメイン|**adatum.com**|
    |組織単位パス|**OU=WVDInfra,DC=adatum,DC=com**|
-   |ユーザー名|**学生**|
+   |ユーザー名|**Student**|
    |パスワード|**Pa55w.rd1234**|
    |[パスワードの確認入力]|**Pa55w.rd1234**|
 
@@ -178,7 +178,7 @@ Azure Active Directory ドメインサービス (AD DS) 環境でホスト プ�
    |特定のドメインまたはユニット|**あり**|
    |参加するドメイン|**adatum.com**|
    |組織単位パス|**OU=WVDInfra,DC=adatum,DC=com**|   
-   |仮想マシン管理者アカウントのユーザー名|**学生**|
+   |仮想マシン管理者アカウントのユーザー名|**Student**|
    |仮想マシン管理者アカウントのパスワード|**Pa55w.rd1234**|
 
    > **注**:お気づきかもしれませんが、既存のプールにセッション ホストを追加するときに、VM のイメージとプレフィックスを変更することができます。 一般に、プール内のすべての VM を置き換える予定がない限り、これはお勧めしません。 

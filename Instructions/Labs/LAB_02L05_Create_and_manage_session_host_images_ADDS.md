@@ -119,7 +119,7 @@ Active Directory ドメイン サービス (AD DS) 環境で Azure Virtual Deskt
 
    |設定|値|
    |---|---|
-   |[ユーザー名]|**学生**|
+   |[ユーザー名]|**Student**|
    |パスワード|**Pa55w.rd1234**|
 
    > **注**:まず、FSLogix バイナリをインストールします。
