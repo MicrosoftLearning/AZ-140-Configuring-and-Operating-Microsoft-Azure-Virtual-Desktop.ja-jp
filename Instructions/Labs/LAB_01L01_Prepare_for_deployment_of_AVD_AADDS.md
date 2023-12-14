@@ -45,7 +45,7 @@ Azure Active Directory Domain Services (Microsoft Entra DS) 環境での Azure V
 
 #### タスク 1: 現在の vCPU 使用率を特定する
 
-1. ラボ コンピューターから Web ブラウザーを起動して [Azure portal](https://portal.azure.com) に移動し、このラボで使用するサブスクリプションの所有者ロールを持つユーザー アカウントの資格情報を入力してサインインします。
+1. ラボ コンピューターから Web ブラウザーを起動して [Azure portal](https://portal.azure.com) に移動し、このラボで使用するサブスクリプションの所有者ロールを持つユーザー アカウントの資格情報を指定してサインインします。
 1. Azure portal で、検索テキスト ボックスのすぐ右にあるツール バー アイコンを選択して [**Cloud Shell**] ウィンドウを開きます。
 1. **Bash** または **PowerShell** の選択を求めるメッセージが表示されたら、 **[PowerShell]** を選択します。 
 
@@ -89,7 +89,7 @@ Azure Active Directory Domain Services (Microsoft Entra DS) 環境での Azure V
 
    |**設定**|**Value**|
    |---|---|
-   |**検索する**|**Standard DSv3**|
+   |**検索**|**Standard DSv3**|
    |**すべての場所**|**すべてクリア**し、*"自分の場所"* を調べます|
    |**リソース プロバイダー** | **Microsoft.Compute** |
    
@@ -180,7 +180,7 @@ Azure Active Directory Domain Services (Microsoft Entra DS) 環境での Azure V
    |設定|値|
    |---|---|
    |サブスクリプション|このラボで使用している Azure サブスクリプションの名前|
-   |リソース グループ|新しい **az140-11a-RG**の作成を選択します|
+   |Resource group|新しい **az140-11a-RG**の作成を選択します|
    |DNS ドメイン名|**adatum.com**|
    |リージョン|AVD デプロイをホストするリージョンの名前|
    |SKU|**Standard**|
@@ -313,12 +313,12 @@ Azure Active Directory Domain Services (Microsoft Entra DS) 環境での Azure V
    |設定|値|
    |---|---|
    |サブスクリプション|このラボで使用している Azure サブスクリプションの名前|
-   |リソース グループ|**az140-11a-RG**|
+   |Resource group|**az140-11a-RG**|
    |名前|**az140-11a-bastion**|
    |リージョン|この演習の前のタスクでリソースをデプロイしたリージョンと同じ Azure リージョン|
    |レベル|**Basic**|
-   |Virtual Network|**az140-aadds-vnet11a**|
-   |Subnet|**AzureBastionSubnet (10.10.254.0/24)**|
+   |仮想ネットワーク|**az140-aadds-vnet11a**|
+   |サブネット|**AzureBastionSubnet (10.10.254.0/24)**|
    |パブリック IP アドレス|**新規作成**|
    |パブリック IP の名前|**az140-aadds-vnet11a-ip**|
 

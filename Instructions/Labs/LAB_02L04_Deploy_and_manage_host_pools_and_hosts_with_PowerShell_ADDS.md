@@ -15,7 +15,7 @@ lab:
 
 ## 推定所要時間
 
-約 60 分
+60 分
 
 ## ラボのシナリオ
 
@@ -91,7 +91,7 @@ Active Directory Domain Services (AD DS) 環境で PowerShell を使用して、
 1. ネットワーク セキュリティ グループ ウィンドウの左側の垂直メニューの **[設定]** セクションで、**[プロパティ]** をクリックします。
 1. **[プロパティ]** ウィンドウで、**[リソース ID]** テキスト ボックスの右側にある **[クリップボードにコピー]** アイコンをクリックします。 
 
-   > **注**: サブスクリプション ID は異なりますが、値は `/subscriptions/de8279a3-0675-40e6-91e2-5c3728792cb5/resourceGroups/az140-11-RG/providers/Microsoft.Network/networkSecurityGroups/az140-cl-vm11-nsg` のような形式になります。 これは、次のタスクで必要になるので記録しておきます。
+   > **注**: 値は、`/subscriptions/de8279a3-0675-40e6-91e2-5c3728792cb5/resourceGroups/az140-11-RG/providers/Microsoft.Network/networkSecurityGroups/az140-cl-vm11-nsg` のような形式になります。ただし、サブスクリプション ID は異なります。 これは、次のタスクで必要になるので記録しておきます。
 
 #### タスク2: PowerShell を使用して Azure Virtual Desktop のホスト プールを作成する
 
@@ -300,18 +300,18 @@ Active Directory Domain Services (AD DS) 環境で PowerShell を使用して、
 
 1. ラボでプロビジョニングされた Azure VM を停止して割り当てを解除する
 
->**注**: この演習では、対応するコンピューティング料金を最小限に抑えるために、このラボでプロビジョニングされた Azure VM の割り当てを解除します。
+>**注**: この演習では、関連するコンピューティング料金を最小限に抑えるために、このラボでプロビジョニングされた Azure VM の割り当てを解除します
 
 #### タスク 1: ラボでプロビジョニングされた Azure VM の割り当てを解除する
 
-1. ラボのコンピューターに切り替え、Azure portal が表示されている Web ブラウザー ウィンドウにおいて、**[Cloud Shell]** ペイン内で **[PowerShell]** シェル セッションを開きます。
-1. [Cloud Shell] ペインの [PowerShell] セッションから、次を実行して、このラボで作成されたすべての Azure VM を一覧表示します。
+1. ラボ コンピューターに切り替え、Azure portal が表示されている Web ブラウザー ウィンドウで、[**Cloud Shell**] ウィンドウの **PowerShell** シェル セッションを開きます。
+1. [Cloud Shell] ウィンドウの PowerShell セッションから、次を実行して、このラボで作成されたすべての Azure VM を一覧表示します。
 
    ```powershell
    Get-AzVM -ResourceGroup 'az140-24-RG'
    ```
 
-1. [Cloud Shell] ペインの [PowerShell] セッションから、次を実行して、このラボで作成したすべての Azure VM を停止して割り当てを解除します。
+1. [Cloud Shell] ウィンドウの PowerShell セッションから、次を実行して、このラボで作成したすべての Azure VM を停止して割り当てを解除します。
 
    ```powershell
    Get-AzVM -ResourceGroup 'az140-24-RG' | Stop-AzVM -NoWait -Force

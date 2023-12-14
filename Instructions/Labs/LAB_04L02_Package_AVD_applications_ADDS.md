@@ -17,7 +17,7 @@ lab:
 
 ## 推定所要時間
 
-約 60 分
+60 分
 
 ## ラボのシナリオ
 
@@ -448,13 +448,13 @@ Active Directory Domain Services (AD DS) 環境で Azure Virtual Desktop アプ�
 1. **[MSIX パッケージの追加]** ウィンドウの **[MSIX イメージのパス]** テキストボックスに、**XmlNotepad.vhd** ファイルへのパスを `\\<storage-account-name>.file.core.windows.net\az140-42-msixvhds\packages\XmlNotepad.vhd`の形式で入力し (`<storage-account-name>` プレースホルダーを、**az140-42-msixvhds** ファイル共有をホストするストレージ アカウントの名前に置き換えます)、**[追加]** をクリックします。
 1. **[MSIX パッケージの追加]** ブレードで、次のように設定してから **[追加]** をクリックします。
 
-   |設定|値|
+   |設定|Value|
    |---|---|
    |MSIX イメージ パス|**\\\\\<storage-account-name\>.file.core.windows.net\\az140-42-msixvhds\\XmlNotepad.vhd** で、`<storage-account-name>` のプレースホルダーは、**az140-42-msixvhds** ファイル共有をホストするストレージ アカウントの名前を指定します。|
    |MSIX パッケージ|パッケージの作成時に生成される名前|
    |[表示名]|**XML Notepad**|
    |登録タイプ|**オンデマンド**|
-   |都道府県|**アクティブです**|
+   |状態|**アクティブ**|
 
 #### タスク 4: MSIX アプリをアプリケーション グループに公開する
 
@@ -466,7 +466,7 @@ Active Directory Domain Services (AD DS) 環境で Azure Virtual Desktop アプ�
 1. **[az140-21-hp1-Utilities-RAG \| アプリケーション]** ブレードで、**[+ 追加]** をクリックします。
 1. **[アプリケーションの追加]** ブレードで、次のように設定してから **[保存]** を選択します。
 
-   |設定|値|
+   |設定|Value|
    |---|---|
    |アプリケーション ソース|**MSIX パッケージ**|
    |MSIX パッケージ|イメージに含まれるパッケージを表す名前|
@@ -482,7 +482,7 @@ Active Directory Domain Services (AD DS) 環境で Azure Virtual Desktop アプ�
 1. **[az140-21-hp1-DAG \| アプリケーション]** ブレードで、**[+ 追加]** をクリックします。
 1. **[アプリケーションの追加]** ブレードで、次のように設定してから **[保存]** を選択します。
 
-   |設定|値|
+   |設定|Value|
    |---|---|
    |アプリケーション ソース|**MSIX パッケージ**|
    |MSIX パッケージ|イメージに含まれるパッケージを表す名前|

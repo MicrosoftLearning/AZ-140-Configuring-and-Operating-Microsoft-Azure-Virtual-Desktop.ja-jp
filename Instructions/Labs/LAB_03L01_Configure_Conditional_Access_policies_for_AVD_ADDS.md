@@ -12,11 +12,11 @@ lab:
 - Azure サブスクリプション
 - Azure サブスクリプションに関連付けられた Microsoft Entra テナントの全体管理者ロールと、Azure サブスクリプションの所有者または共同作成者ロールを持つ Microsoft アカウントまたは Microsoft Entra アカウント
 - 完了したラボ: **Azure Virtual Desktop (AD DS) のデプロイを準備する**
-- 完了したラボ **Azure portal (AD DS) を使用してホスト プールとセッション ホストをデプロイする**
+- 完了したラボ **Azure portal を使用してホスト プールとセッション ホストをデプロイする (AD DS)**
 
 ## 推定所要時間
 
-約 60 分
+60 分
 
 ## ラボのシナリオ
 
@@ -273,4 +273,4 @@ Microsoft Entra 条件付きアクセスを使用して、Active Directory Domai
    Get-AzVM -ResourceGroup 'az140-21-RG' | Stop-AzVM -NoWait -Force
    ```
 
-   >**注**: このコマンドは非同期で実行されるため (-NoWait パラメーターによって決定されます)、同じ [PowerShell] セッション内で直後に別の PowerShell コマンドを実行できますが、Azure VM が実際に停止され、割り当て解除されるまでには数分かかります。
+   >**注**: このコマンドは非同期で実行されるため (-NoWait パラメーターによって決定されます)、同じ PowerShell セッション内で直後に別の PowerShell コマンドを実行できますが、Azure VM が実際に停止されて割り当てが解除されるまでに数分かかります。

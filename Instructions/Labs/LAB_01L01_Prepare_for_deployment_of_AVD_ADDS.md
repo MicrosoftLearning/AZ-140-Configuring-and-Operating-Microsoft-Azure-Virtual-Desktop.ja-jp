@@ -14,7 +14,7 @@ lab:
 
 ## 推定所要時間
 
-約 60 分
+60 分
 
 ## ラボのシナリオ
 
@@ -139,7 +139,7 @@ Active Directory Domain Services (AD DS) 環境の展開を準備する必要が
    |設定|値|
    |---|---|
    |サブスクリプション|このラボで使用している Azure サブスクリプションの名前|
-   |リソース グループ|**az140-11-RG**|
+   |Resource group|**az140-11-RG**|
    |ドメイン名|**adatum.com**|
 
 1. **[新しい AD フォレストを使用して Azure VM を作成する]** ブレードで、**[確認と作成]** を選択し、**[作成]** を選択します。
@@ -181,7 +181,7 @@ Active Directory Domain Services (AD DS) 環境の展開を準備する必要が
 
 > **注**: ブラウザーでポップアップ機能が有効になっていることを確認します。
 
-1. [Azure portal](https://portal.azure.com) が表示されているブラウザー ウィンドウで、別のタブを開き、そのブラウザー タブで Azure portal に移動します。
+1. Azure portal が表示されているブラウザー ウィンドウで、別のタブを開き、そのブラウザー タブで [Azure portal](https://portal.azure.com) に移動します。
 1. Azure portal で、検索テキスト ボックスのすぐ右にあるツール バー アイコンを選択して **[Cloud Shell]** ペインを開きます。
 1. Cloud Shell ペインの PowerShell セッションから以下を実行して、この演習で先ほど作成した **az140-adds-vnet11** という名前の仮想ネットワークに **AzureBastionSubnet** という名前のサブネットを追加します。
 
@@ -202,12 +202,12 @@ Active Directory Domain Services (AD DS) 環境の展開を準備する必要が
    |設定|値|
    |---|---|
    |サブスクリプション|このラボで使用している Azure サブスクリプションの名前|
-   |リソース グループ|**az140-11-RG**|
+   |Resource group|**az140-11-RG**|
    |名前|**az140-11-bastion**|
    |リージョン|この演習の前のタスクでリソースをデプロイしたのと同じ Azure リージョン|
    |レベル|**Basic**|
-   |Virtual Network|**az140-adds-vnet11**|
-   |Subnet|**AzureBastionSubnet (10.0.254.0/24)**|
+   |仮想ネットワーク|**az140-adds-vnet11**|
+   |サブネット|**AzureBastionSubnet (10.0.254.0/24)**|
    |パブリック IP アドレス|**新規作成**|
    |パブリック IP の名前|**az140-adds-vnet11-ip**|
 

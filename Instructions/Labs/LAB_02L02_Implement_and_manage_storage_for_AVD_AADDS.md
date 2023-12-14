@@ -19,7 +19,7 @@ lab:
 
 ## ラボのシナリオ
 
-Microsoft Entra DS 環境で Azure Virtual Desktop デプロイのストレージを実装および管理する必要があります。
+Microsoft Entra DS 環境で Azure Virtual Desktop デプロイのストレージを実装して管理する必要があります。
 
 ## 目標
   
@@ -65,7 +65,7 @@ Microsoft Entra DS 環境で Azure Virtual Desktop デプロイのストレー�
    |設定|値|
    |---|---|
    |サブスクリプション|このラボで使用している Azure サブスクリプションの名前|
-   |リソース グループ|新しいリソース グループの名前 **az140-22a-RG**|
+   |Resource group|新しいリソース グループの名前 **az140-22a-RG**|
    |ストレージ アカウント名|3 文字から 15 文字の長さで、アルファベットの小文字と数字で構成され、アルファベットで始まる、グローバルに一意の任意の名前|
    |場所|Azure Virtual Desktop ラボ環境をホストしている Azure リージョンの名前|
    |パフォーマンス|**Standard**|

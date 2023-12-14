@@ -10,9 +10,9 @@ lab:
 ## ラボの依存関係
 
 - このラボで使用する Azure サブスクリプション。
-- このラボで使用する Azure サブスクリプションの所有者または共同作成者ロールを持つ Microsoft アカウントまたは Microsoft Entra アカウントと、Azure サブスクリプションに関連づけられた Microsoft Entra テナントのグローバル管理者ロールを持つ Microsoft アカウントまたは Microsoft Entra アカウント。
+- このラボで使用する Azure サブスクリプションの所有者または共同作成者ロールを持つ Microsoft アカウントまたは Microsoft Entra アカウントと、Azure サブスクリプションに関連付けられた Microsoft Entra テナントのグローバル管理者ロールを持つ Microsoft アカウントまたは Microsoft Entra アカウント。
 - 完了したラボ: **Azure Virtual Desktop (AD DS) のデプロイを準備する**
-- 完了したラボ **Azure portal (AD DS) を使用してホスト プールとセッション ホストをデプロイする**
+- 完了したラボ **Azure portal を使用してホスト プールとセッション ホストをデプロイする (AD DS)**
 
 ## 推定所要時間
 

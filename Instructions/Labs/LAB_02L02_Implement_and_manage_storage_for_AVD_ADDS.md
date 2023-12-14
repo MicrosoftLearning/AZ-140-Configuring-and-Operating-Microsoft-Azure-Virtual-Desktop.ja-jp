@@ -10,7 +10,7 @@ lab:
 ## ラボの依存関係
 
 - このラボで使用する Azure サブスクリプション。
-- このラボで使用する Azure サブスクリプションの所有者または共同作成者ロールを持つ Microsoft アカウントまたは Microsoft Entra アカウントと、Azure サブスクリプションに関連づけられた Microsoft Entra テナントのグローバル管理者ロールを持つ Microsoft アカウントまたは Microsoft Entra アカウント。
+- このラボで使用する Azure サブスクリプションの所有者または共同作成者ロールを持つ Microsoft アカウントまたは Microsoft Entra アカウントと、Azure サブスクリプションに関連付けられた Microsoft Entra テナントのグローバル管理者ロールを持つ Microsoft アカウントまたは Microsoft Entra アカウント。
 - 完了したラボ: **Azure Virtual Desktop (AD DS) のデプロイを準備する**
 
 ## 推定所要時間
@@ -62,7 +62,7 @@ Microsoft Entra DS 環境で Azure Virtual Desktop デプロイのストレー�
    |設定|値|
    |---|---|
    |サブスクリプション|このラボで使用している Azure サブスクリプションの名前|
-   |リソース グループ|新しいリソース グループの名前 **az140-22-RG**|
+   |Resource group|新しいリソース グループの名前 **az140-22-RG**|
    |ストレージ アカウント名|3 文字から 15 文字の長さで、小文字のアルファベットと数字で構成され、アルファベットで始まるグローバルに一意の任意の名前|
    |リージョン|Azure Virtual Desktop ラボ環境をホストしている Azure リージョンの名前|
    |パフォーマンス|**Standard**|
