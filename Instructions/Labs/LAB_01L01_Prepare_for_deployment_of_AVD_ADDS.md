@@ -327,7 +327,13 @@ Active Directory Domain Services (AD DS) 環境の展開を準備する必要が
    Connect-AzAccount
    ```
 
-1. ダイアログが表示されたら、このラボで使用するサブスクリプションの所有者ロールをもつユーザー アカウントの資格情報を入力します。
+1. プロンプトが表示されたら、このラボで使用しているサブスクリプションで所有者の役割を持つ Entra ID ユーザーアカウントの資格情報を入力します。
+1. **[管理者: Windows PowerShell ISE]** コンソールで、次を実行して Windows アカウント マネージャーを無効にします。
+
+   ```powershell
+   Update-AzConfig -EnableLoginByWam $false
+   ```
+
 1. **[Administrator: Windows PowerShell ISE]** コンソールから、次を実行して、Azure サブスクリプションに関連付けられている Microsoft Entra テナントの ID プロパティを取得します。
 
    ```powershell
