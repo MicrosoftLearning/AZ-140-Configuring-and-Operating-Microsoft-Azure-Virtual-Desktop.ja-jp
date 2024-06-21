@@ -97,19 +97,19 @@ AD DS 環境で Azure Virtual Desktop をデプロイするためには、スト
    Get-ChildItem -Path C:\Allfiles\Labs\02 -File -Recurse | Unblock-File
    ```
 
+1. **[管理者: Windows PowerShell ISE]** コンソールで、次を実行して Windows アカウント マネージャーを無効にします。
+
+   ```powershell
+   Update-AzConfig -EnableLoginByWam $false
+   ```
+
 1. **[管理者: Windows PowerShell ISE]** コンソールから、以下を実行して、Azure サブスクリプションにサインインします。
 
    ```powershell
    Connect-AzAccount
    ```
 
-1. プロンプトが表示されたら、このラボで使用しているサブスクリプションで所有者の役割を持つ Entra ID ユーザーアカウントの資格情報を入力します。
-1. **[管理者: Windows PowerShell ISE]** コンソールで、次を実行して Windows アカウント マネージャーを無効にします。
-
-   ```powershell
-   Update-AzConfig -EnableLoginByWam $false
-   ```
-   
+1. プロンプトが表示されたら、このラボで使用しているサブスクリプションで所有者の役割を持つ Entra ID ユーザーアカウントの資格情報を入力します。 
 1. **[管理者: Windows PowerShell ISE]** スクリプト ペインで、以下のように実行して、後続のスクリプトを実行するために必要な変数を設定します。
 
    ```powershell

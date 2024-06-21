@@ -321,6 +321,12 @@ Active Directory Domain Services (AD DS) 環境の展開を準備する必要が
 
    > **注**:Az モジュールのインストールからの出力が表示されるまで、3 から 5 分待つ必要がある場合があります。 また、出力が停止した**後**、さらに 5 分待つ必要がある場合があります。 これは正しい動作です。
 
+1. **[管理者: Windows PowerShell ISE]** コンソールで、次を実行して Windows アカウント マネージャーを無効にします。
+
+   ```powershell
+   Update-AzConfig -EnableLoginByWam $false
+   ```
+
 1. **[管理者: Windows PowerShell ISE]** コンソールから、以下を実行して、Azure サブスクリプションにサインインします。
 
    ```powershell
@@ -328,12 +334,6 @@ Active Directory Domain Services (AD DS) 環境の展開を準備する必要が
    ```
 
 1. プロンプトが表示されたら、このラボで使用しているサブスクリプションで所有者の役割を持つ Entra ID ユーザーアカウントの資格情報を入力します。
-1. **[管理者: Windows PowerShell ISE]** コンソールで、次を実行して Windows アカウント マネージャーを無効にします。
-
-   ```powershell
-   Update-AzConfig -EnableLoginByWam $false
-   ```
-
 1. **[Administrator: Windows PowerShell ISE]** コンソールから、次を実行して、Azure サブスクリプションに関連付けられている Microsoft Entra テナントの ID プロパティを取得します。
 
    ```powershell
