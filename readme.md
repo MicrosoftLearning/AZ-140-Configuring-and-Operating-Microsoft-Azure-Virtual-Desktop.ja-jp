@@ -1,3 +1,5 @@
+**このコースは **2024 年 9 月 30 日**に廃止されます。コースが廃止されると、すべての GitHub リポジトリが削除されます。よろしくお願いいたします。**
+
 # AZ-140:Microsoft Azure Virtual Desktop の構成と操作
 
 - **[ラボへのリンク (HTML 形式)](https://microsoftlearning.github.io/AZ-140-Configuring-and-Operating-Microsoft-Azure-Virtual-Desktop/)**
