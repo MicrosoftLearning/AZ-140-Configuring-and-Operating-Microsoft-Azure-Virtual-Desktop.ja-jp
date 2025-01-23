@@ -60,7 +60,7 @@ Active Directory ドメイン サービス (AD DS) 環境でホスト プール�
 1. **az140-dc-vm11** への Bastion セッション内で、**[管理者: Windows PowerShell ISE]** コンソールで、次のように実行して、Azure Virtual Desktop ホストのコンピューター オブジェクトをホストする組織単位を作成します。
 
    ```powershell
-   New-ADOrganizationalUnit 'WVDInfra' –path 'DC=adatum,DC=com' -ProtectedFromAccidentalDeletion $false
+   New-ADOrganizationalUnit 'WVDInfra' -path 'DC=adatum,DC=com' -ProtectedFromAccidentalDeletion $false
    ```
 
 1. [**管理者: Windows PowerShell ISE**] コンソールで以下を実行して、**aduser1** アカウントのユーザー プリンシパル名を識別します。
