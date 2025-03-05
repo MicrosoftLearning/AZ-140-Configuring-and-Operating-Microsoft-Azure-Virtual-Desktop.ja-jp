@@ -8,9 +8,29 @@ layout: home
 
 各ラボの演習とデモへのハイパーリンクを以下に示します。
 
-## ラボ
+## ラボ \(Entra ID\)
 
-{% assign labs = site.pages | where_exp:"page", "page.url contains '/Instructions/Labs'" %}
+{% assign labs = site.pages | where_exp:"page", "page.url contains '/Instructions/Labs_EntraID'" %}
+| モジュール | ラボ |
+| --- | --- | 
+{% for activity in labs %}| {{ activity.lab.module }} | [{{ activity.lab.title }}{% if activity.lab.type %} - {{ activity.lab.type }}{% endif %}]({{ site.github.url }}{{ activity.url }}) |
+{% endfor %}
+
+## ラボ \(AD DS\)
+
+必要なラボ ファイルは、[こちらからダウンロード](https://github.com/MicrosoftLearning/AZ-140-Configuring-and-Operating-Microsoft-Azure-Virtual-Desktop/archive/master.zip)できます
+
+{% assign labs = site.pages | where_exp:"page", "page.url contains '_ADDS'" %}
+| モジュール | ラボ |
+| --- | --- | 
+{% for activity in labs %}| {{ activity.lab.module }} | [{{ activity.lab.title }}{% if activity.lab.type %} - {{ activity.lab.type }}{% endif %}]({{ site.github.url }}{{ activity.url }}) |
+{% endfor %}
+
+## ラボ \(Entra DS\)
+
+必要なラボ ファイルは、[こちらからダウンロード](https://github.com/MicrosoftLearning/AZ-140-Configuring-and-Operating-Microsoft-Azure-Virtual-Desktop/archive/master.zip)できます
+
+{% assign labs = site.pages | where_exp:"page", "page.url contains '_AADDS'" %}
 | モジュール | ラボ |
 | --- | --- | 
 {% for activity in labs %}| {{ activity.lab.module }} | [{{ activity.lab.title }}{% if activity.lab.type %} - {{ activity.lab.type }}{% endif %}]({{ site.github.url }}{{ activity.url }}) |
