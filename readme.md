@@ -1,3 +1,5 @@
+**⚠️ This GitHub repo will retire on 31st October 2025.**
+
 # AZ-140:Microsoft Azure Virtual Desktop の構成と操作
 
 - **[ラボへのリンク (HTML 形式)](https://microsoftlearning.github.io/AZ-140-Configuring-and-Operating-Microsoft-Azure-Virtual-Desktop/)**
