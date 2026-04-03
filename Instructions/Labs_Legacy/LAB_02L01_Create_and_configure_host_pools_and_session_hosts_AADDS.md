@@ -2,7 +2,7 @@
 lab:
   title: 'ラボ: ホスト プールとセッション ホストを作成して構成する (Microsoft Entra DS)'
   module: 'Module 2: Implement an AVD Infrastructure'
-  description: Microsoft Entra DS ドメインで Azure Virtual Desktop 環境を構成します。 Microsoft Entra DS ドメインで Azure Virtual Desktop 環境を検証します。
+  description: このラボを完了すると、次のことができるようになります。
   duration: 60 minutes
   level: 400
   islab: true
