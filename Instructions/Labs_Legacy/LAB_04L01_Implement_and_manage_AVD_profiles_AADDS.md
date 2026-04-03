@@ -2,6 +2,14 @@
 lab:
   title: 'ラボ: Azure Virtual Desktop プロファイルを実装して管理する (Microsoft Entra AD DS)'
   module: 'Module 4: Manage User Environments and Apps'
+  description: このラボを完了すると、次のことができるようになります。
+  duration: 30 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - Azure
+    - Azure Virtual Desktop
+    - Microsoft Entra
 ---
 
 # ラボ - Azure Virtual Desktop プロファイルを実装して管理する (Microsoft Entra DS)

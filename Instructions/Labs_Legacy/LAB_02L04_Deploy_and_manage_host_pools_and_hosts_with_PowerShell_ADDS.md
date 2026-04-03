@@ -2,6 +2,10 @@
 lab:
   title: 'ラボ: PowerShell (AD DS) を使用してホスト プールとホストをデプロイおよび管理する'
   module: 'Module 2: Implement a WVD Infrastructure'
+  description: このラボを完了すると、次のことができるようになります。
+  duration: 60 minutes
+  level: 400
+  islab: true
 ---
 
 # ラボ - PowerShell を使用してホスト プールとホストをデプロイして管理する

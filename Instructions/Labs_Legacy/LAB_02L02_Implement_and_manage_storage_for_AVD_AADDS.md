@@ -2,6 +2,12 @@
 lab:
   title: 'ラボ: AVD のストレージを実装および管理する (Microsoft Entra DS)'
   module: 'Module 2: Implement an AVD Infrastructure'
+  description: このラボを完了すると、次のことができるようになります。
+  duration: 30 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - Microsoft Entra
 ---
 
 # ラボ - AVD のストレージを実装および管理する (Microsoft Entra DS)

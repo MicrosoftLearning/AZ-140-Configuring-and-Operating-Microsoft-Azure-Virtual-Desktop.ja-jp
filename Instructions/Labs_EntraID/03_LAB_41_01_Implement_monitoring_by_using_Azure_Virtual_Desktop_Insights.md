@@ -2,6 +2,13 @@
 lab:
   title: 'ラボ: Azure Virtual Desktop の分析情報を使用して監視を実装する'
   module: 'Module 4.1: Monitor and manage Azure Virtual Desktop services'
+  description: このラボを完了すると、次のことができるようになります。
+  duration: 25 minutes
+  level: 400
+  islab: true
+  primarytopics:
+    - Azure
+    - Azure Virtual Desktop
 ---
 
 # ラボ - Azure Virtual Desktop の分析情報を使用して監視を実装する
@@ -14,7 +21,7 @@ lab:
 - ラボ *Azure portal を使用してホスト プールとセッション ホストをデプロイする (Entra ID)* 完了
 - ラボ *Azure portal を使用してホスト プールとセッション ホストを管理する (Entra ID)* 完了
 
-## 推定所要時間
+## 所要時間
 
 25 分
 

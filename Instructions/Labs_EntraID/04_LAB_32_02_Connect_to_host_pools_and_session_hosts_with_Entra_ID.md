@@ -2,6 +2,10 @@
 lab:
   title: 'ラボ: セッション ホストに接続する (Entra ID)'
   module: 'Module 3.2: Plan and implement user experience and client settings'
+  description: Microsoft Entra に参加または登録されていない Windows クライアントから接続することにより、Microsoft Entra 参加済み Azure Virtual Desktop セッション ホストの機能を検証します。
+  duration: 20 minutes
+  level: 300
+  islab: true
 ---
 
 # ラボ - セッション ホストに接続する (Entra ID)
@@ -14,7 +18,7 @@ lab:
 - ラボ *Azure portal を使用してホスト プールとセッション ホストをデプロイする (Entra ID)* 完了
 - ラボ *Azure portal を使用してホスト プールとセッション ホストを管理する (Entra ID)* 完了
 
-## 推定所要時間
+## 所要時間
 
 20 分
 

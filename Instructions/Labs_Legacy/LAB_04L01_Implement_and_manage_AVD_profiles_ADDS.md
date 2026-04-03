@@ -2,6 +2,13 @@
 lab:
   title: 'ラボ: Azure Virtual Desktop プロファイル (AD DS) を実装して管理する'
   module: 'Module 4: Manage User Environments and Apps'
+  description: このラボを完了すると、次のことができるようになります。
+  duration: 30 minutes
+  level: 200
+  islab: true
+  primarytopics:
+    - Azure
+    - Azure Virtual Desktop
 ---
 
 # ラボ - Azure Virtual Desktop プロファイル (AD DS) を実装して管理する
