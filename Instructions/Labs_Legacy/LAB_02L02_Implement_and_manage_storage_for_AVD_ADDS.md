@@ -2,6 +2,10 @@
 lab:
   title: 'ラボ: AVD (AD DS) のストレージを実装および管理する'
   module: 'Module 2: Implement an AVD Infrastructure'
+  description: このラボを完了すると、次のことができるようになります。
+  duration: 30 minutes
+  level: 300
+  islab: true
 ---
 
 # ラボ - AVD (AD DS) のストレージを実装および管理する

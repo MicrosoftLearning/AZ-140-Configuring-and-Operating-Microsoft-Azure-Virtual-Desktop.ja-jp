@@ -2,6 +2,10 @@
 lab:
   title: 'ラボ: AVD (AD DS) に対する条件付きアクセス ポリシーを構成する'
   module: 'Module 3: Manage Access and Security'
+  description: このラボを完了すると、次のことができるようになります。
+  duration: 60 minutes
+  level: 400
+  islab: true
 ---
 
 # ラボ - AVD (AD DS) に対する条件付きアクセス ポリシーを構成する

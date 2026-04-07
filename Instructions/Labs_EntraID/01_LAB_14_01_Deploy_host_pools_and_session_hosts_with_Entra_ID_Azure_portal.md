@@ -2,6 +2,13 @@
 lab:
   title: 'ラボ: Azure portal を使用してホスト プールとセッション ホストをデプロイする (Entra ID)'
   module: 'Module 1.4: Implement host pools and session hosts'
+  description: このラボを完了すると、次のことができるようになります。
+  duration: 60 minutes
+  level: 400
+  islab: true
+  primarytopics:
+    - Azure
+    - Azure Portal
 ---
 
 # ラボ - Azure portal を使用してホスト プールとセッション ホストをデプロイする (Entra ID)
@@ -135,7 +142,7 @@ Microsoft Azure のサブスクリプションを所有しています。 Micros
     |セキュリティの種類|**トラステッド起動の仮想マシン**|
     |Image|**Windows 11 Enterprise マルチセッション、バージョン 23H2 + Microsoft 365 Apps**|
     |仮想マシンのサイズ|**Standard DC2s_v3**|
-    |[Number of VMs](VM の数)|**2**|
+    |[Number of VMs]\(VM の数\)|**2**|
     |OS ディスクの種類|**Standard SSD**|
     |OS ディスク サイズ|**既定のサイズ (128 GB)**|
     |ブート診断|**マネージド ストレージ アカウントで有効にする (推奨)**|

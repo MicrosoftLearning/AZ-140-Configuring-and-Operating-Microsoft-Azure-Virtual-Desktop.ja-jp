@@ -2,6 +2,13 @@
 lab:
   title: 'ラボ: Azure Virtual Desktop のデプロイを準備する (AD DS)'
   module: 'Module 1: Plan an AVD Architecture'
+  description: このラボを完了すると、次のことができるようになります。
+  duration: 60 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - Azure
+    - Azure Virtual Desktop
 ---
 
 # ラボ - Azure Virtual Desktop のデプロイを準備する (AD DS)

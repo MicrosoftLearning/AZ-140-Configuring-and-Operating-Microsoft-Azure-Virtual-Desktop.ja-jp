@@ -2,6 +2,10 @@
 lab:
   title: 'ラボ: セッション ホスト イメージ (AD DS) を作成して管理する'
   module: 'Module 2: Implement an AVD Infrastructure'
+  description: このラボを完了すると、次のことができるようになります。
+  duration: 60 minutes
+  level: 400
+  islab: true
 ---
 
 # ラボ - セッション ホスト イメージ (AD DS) を作成して管理する

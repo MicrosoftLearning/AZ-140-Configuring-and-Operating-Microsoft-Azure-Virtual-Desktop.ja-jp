@@ -2,6 +2,12 @@
 lab:
   title: 'ラボ: ホスト プールとセッション ホストを作成して構成する (Microsoft Entra DS)'
   module: 'Module 2: Implement an AVD Infrastructure'
+  description: このラボを完了すると、次のことができるようになります。
+  duration: 60 minutes
+  level: 400
+  islab: true
+  primarytopics:
+    - Microsoft Entra
 ---
 
 # ラボ: ホスト プールとセッション ホストを作成して構成する (Microsoft Entra DS)
@@ -101,7 +107,7 @@ Azure Active Directory Domain Servicess (Microsoft Entra DS) 環境でホスト 
    |セキュリティの種類|**トラステッド起動の仮想マシン**|
    |Image|**Windows 11 Enterprise マルチセッション + Microsoft 365 Apps、バージョン 22H2**|
    |[仮想マシンのサイズ]|**Standard DC2s_v3**|
-   |[Number of VMs](VM の数)|**2**|
+   |[Number of VMs]\(VM の数\)|**2**|
    |OS ディスクの種類|**Standard SSD**|
    |仮想ネットワーク|**az140-aadds-vnet11a**|
    |Subnet|**hp1-Subnet (10.10.1.0/24)**|

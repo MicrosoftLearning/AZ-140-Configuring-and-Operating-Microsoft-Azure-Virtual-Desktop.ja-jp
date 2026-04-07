@@ -2,6 +2,13 @@
 lab:
   title: 'ラボ: Azure portal を使用してホスト プールとセッション ホストを管理する (Entra ID)'
   module: 'Module 3.2: Plan and implement user experience and client settings'
+  description: このラボを完了すると、次のことができるようになります。
+  duration: 30 minutes
+  level: 500
+  islab: true
+  primarytopics:
+    - Azure
+    - Azure Portal
 ---
 
 # ラボ - Azure portal を使用してホスト プールとセッション ホストを管理する (Entra ID)
