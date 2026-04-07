@@ -2,7 +2,7 @@
 lab:
   title: 'ラボ: Azure portal を使用してホスト プールとセッション ホストを管理する (Entra ID)'
   module: 'Module 3.2: Plan and implement user experience and client settings'
-  description: このラボを完了すると、次のことができるようになります。
+  description: Microsoft Entra 参加済み Azure Virtual Desktop セッション ホストを構成して、さまざまな機能要件とビジネス要件をサポートします。
   duration: 30 minutes
   level: 500
   islab: true

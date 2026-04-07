@@ -2,12 +2,12 @@
 lab:
   title: 'ラボ: Azure Resource Manager テンプレート (AD DS) を使用してホスト プールとホストをデプロイする'
   module: 'Module 2: Implement an AVD Infrastructure'
-  description: このラボを完了すると、次のことができるようになります。
+  description: Azure Resource Manager テンプレートを使用して、Azure Virtual Desktop ホスト プールとホストをデプロイします。
   duration: 45 minutes
-  level: 500
+  level: 400
   islab: true
   primarytopics:
-    - Azure
+    - Azure Virtual Desktop
     - Azure Resource Manager
 ---
 

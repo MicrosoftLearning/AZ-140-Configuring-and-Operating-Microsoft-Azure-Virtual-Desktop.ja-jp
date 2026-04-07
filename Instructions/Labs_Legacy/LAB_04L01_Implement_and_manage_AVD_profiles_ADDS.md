@@ -2,12 +2,11 @@
 lab:
   title: 'ラボ: Azure Virtual Desktop プロファイル (AD DS) を実装して管理する'
   module: 'Module 4: Manage User Environments and Apps'
-  description: このラボを完了すると、次のことができるようになります。
+  description: Azure Virtual Desktop 用に FSLogix ベースのプロファイルを実装します。
   duration: 30 minutes
-  level: 200
+  level: 300
   islab: true
   primarytopics:
-    - Azure
     - Azure Virtual Desktop
 ---
 

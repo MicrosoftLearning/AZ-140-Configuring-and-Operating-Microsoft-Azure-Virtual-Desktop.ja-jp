@@ -2,14 +2,14 @@
 lab:
   title: 'ラボ: Azure Virtual Desktop のデプロイの準備をする (Microsoft Entra DS)'
   module: 'Module 1: Plan an AVD Architecture'
-  description: このラボを完了すると、次のことができるようになります。
+  description: Azure Virtual Desktop のデプロイを準備します (Microsoft Entra DS)。
   duration: 150 minutes
   level: 400
   islab: true
   primarytopics:
     - Azure
     - Azure Virtual Desktop
-    - Microsoft Entra
+    - Microsoft Entra DS
 ---
 
 # ラボ: Azure Virtual Desktop のデプロイの準備をする (Microsoft Entra DS)

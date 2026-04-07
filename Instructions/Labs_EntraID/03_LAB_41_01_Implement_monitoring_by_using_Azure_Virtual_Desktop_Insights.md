@@ -2,7 +2,7 @@
 lab:
   title: 'ラボ: Azure Virtual Desktop の分析情報を使用して監視を実装する'
   module: 'Module 4.1: Monitor and manage Azure Virtual Desktop services'
-  description: このラボを完了すると、次のことができるようになります。
+  description: Azure Virtual Desktop 環境の監視を実装します。
   duration: 25 minutes
   level: 400
   islab: true

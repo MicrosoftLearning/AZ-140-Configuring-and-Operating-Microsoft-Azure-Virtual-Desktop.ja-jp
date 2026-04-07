@@ -2,7 +2,7 @@
 lab:
   title: 'ラボ: イメージ テンプレートを使用してカスタム セッション ホスト イメージを作成する'
   module: 'Module 1.5: Create and manage session host images'
-  description: このラボを完了すると、次のことができるようになります。
+  description: イメージ テンプレートを使用して、Azure Virtual Desktop のカスタム セッション ホスト イメージを作成します。
   duration: 90 minutes
   level: 500
   islab: true

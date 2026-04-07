@@ -2,10 +2,13 @@
 lab:
   title: 'ラボ: PowerShell (AD DS) を使用してホスト プールとホストをデプロイおよび管理する'
   module: 'Module 2: Implement a WVD Infrastructure'
-  description: このラボを完了すると、次のことができるようになります。
+  description: PowerShell を使用して、Azure Virtual Desktop ホスト プールとホストをデプロイします。 PowerShell を使用して、Azure Virtual Desktop ホスト プールにホストを追加します。
   duration: 60 minutes
   level: 400
   islab: true
+  primarytopics:
+    - Azure Virtual Desktop
+    - Azure PowerShell
 ---
 
 # ラボ - PowerShell を使用してホスト プールとホストをデプロイして管理する

@@ -2,7 +2,7 @@
 lab:
   title: 'ラボ: Azure Virtual Desktop に Azure Private Link を実装する'
   module: 'Module 1.1: Plan, implement, and manage networking for Azure Virtual Desktop'
-  description: このラボを完了すると、次のことができるようになります。
+  description: Azure Virtual Desktop に Azure Private Link を実装します。
   duration: 60 minutes
   level: 400
   islab: true

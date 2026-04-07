@@ -2,10 +2,13 @@
 lab:
   title: 'ラボ: AVD (AD DS) のストレージを実装および管理する'
   module: 'Module 2: Implement an AVD Infrastructure'
-  description: このラボを完了すると、次のことができるようになります。
+  description: Azure Virtual Desktop 用プロファイル コンテナーを格納するために Azure Files を構成します。
   duration: 30 minutes
   level: 300
   islab: true
+  primarytopics:
+    - Azure Virtual Desltop
+    - Azure FIies
 ---
 
 # ラボ - AVD (AD DS) のストレージを実装および管理する

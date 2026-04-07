@@ -2,10 +2,12 @@
 lab:
   title: 'ラボ: ホスト プールに自動スケーリングを実装する (AD DS)'
   module: 'Module 5: Monitor and Maintain an AVD Infrastructure'
-  description: このラボを完了すると、次のことができるようになります。
+  description: Azure Virtual Desktop セッション ホストの自動スケールを構成します。
   duration: 60 minutes
   level: 300
   islab: true
+  primarytopics:
+    - Azure Virtual Desktop
 ---
 
 # ラボ - ホスト プールに自動スケールを実装する (AD DS)

@@ -2,10 +2,13 @@
 lab:
   title: 'ラボ: セッション ホスト イメージ (AD DS) を作成して管理する'
   module: 'Module 2: Implement an AVD Infrastructure'
-  description: このラボを完了すると、次のことができるようになります。
+  description: WVD セッション ホスト イメージを作成および管理します。
   duration: 60 minutes
   level: 400
   islab: true
+  primarytopics:
+    - Azure Virtual Desktop
+    - DNS resolution
 ---
 
 # ラボ - セッション ホスト イメージ (AD DS) を作成して管理する

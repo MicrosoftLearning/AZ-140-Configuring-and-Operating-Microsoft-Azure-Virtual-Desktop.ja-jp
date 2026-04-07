@@ -2,7 +2,7 @@
 lab:
   title: 'ラボ: Azure Virtual Desktop のデプロイを準備する (AD DS)'
   module: 'Module 1: Plan an AVD Architecture'
-  description: このラボを完了すると、次のことができるようになります。
+  description: Azure VM を使用して Active Directory Domain Services (AD DS) シングルドメイン フォレストをデプロイします。 AD DS フォレストを Microsoft Entra テナントに統合します。
   duration: 60 minutes
   level: 300
   islab: true

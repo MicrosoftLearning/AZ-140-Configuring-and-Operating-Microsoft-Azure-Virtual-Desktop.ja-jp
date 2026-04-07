@@ -2,14 +2,14 @@
 lab:
   title: 'ラボ: Azure Virtual Desktop プロファイルを実装して管理する (Microsoft Entra AD DS)'
   module: 'Module 4: Manage User Environments and Apps'
-  description: このラボを完了すると、次のことができるようになります。
+  description: Microsoft Entra DS 環境で Azure Virtual Desktop 用のプロファイル コンテナーを格納するように Azure Files を構成します。 Microsoft Entra DS 環境で Azure Virtual Desktop 用に FSLogix ベースのプロファイルを実装します。
   duration: 30 minutes
   level: 300
   islab: true
   primarytopics:
-    - Azure
     - Azure Virtual Desktop
-    - Microsoft Entra
+    - Microsoft Entra DS
+    - Azure Files
 ---
 
 # ラボ - Azure Virtual Desktop プロファイルを実装して管理する (Microsoft Entra DS)

@@ -2,10 +2,13 @@
 lab:
   title: 'ラボ: AVD (AD DS) に対する条件付きアクセス ポリシーを構成する'
   module: 'Module 3: Manage Access and Security'
-  description: このラボを完了すると、次のことができるようになります。
+  description: Azure Virtual Desktop 用の Microsoft Entra ベースの条件付きアクセスを準備します。 Azure Virtual Desktop 用の Microsoft Entra ベースの条件付きアクセスを実装します。
   duration: 60 minutes
   level: 400
   islab: true
+  primarytopics:
+    - Azure Virtual Desktop
+    - Conditional Access
 ---
 
 # ラボ - AVD (AD DS) に対する条件付きアクセス ポリシーを構成する

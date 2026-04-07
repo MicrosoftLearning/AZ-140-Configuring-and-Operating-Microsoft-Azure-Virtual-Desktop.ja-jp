@@ -2,7 +2,7 @@
 lab:
   title: 'ラボ: Azure portal を使用してホスト プールとセッション ホストをデプロイする (AD DS)'
   module: 'Module 2: Implement an AVD Infrastructure'
-  description: このラボを完了すると、次のことができるようになります。
+  description: AD DS ドメインに Azure Virtual Desktop 環境を実装します。 AD DS ドメインで Azure Virtual Desktop 環境を検証します。
   duration: 60 minutes
   level: 400
   islab: true

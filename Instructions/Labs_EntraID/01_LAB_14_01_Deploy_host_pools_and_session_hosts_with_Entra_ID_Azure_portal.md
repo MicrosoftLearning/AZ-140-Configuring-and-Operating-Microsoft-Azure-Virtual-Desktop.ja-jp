@@ -2,7 +2,7 @@
 lab:
   title: 'ラボ: Azure portal を使用してホスト プールとセッション ホストをデプロイする (Entra ID)'
   module: 'Module 1.4: Implement host pools and session hosts'
-  description: このラボを完了すると、次のことができるようになります。
+  description: Microsoft Entra 参加済み Azure Virtual Desktop セッション ホストをデプロイします。
   duration: 60 minutes
   level: 400
   islab: true
