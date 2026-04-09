@@ -2,12 +2,11 @@
 lab:
   title: 'ラボ: Azure Virtual Desktop アプリケーション (AD DS) のパッケージ化'
   module: 'Module 4: Manage User Environments and Apps'
-  description: このラボを完了すると、次のことができるようになります。
+  description: MSIX アプリ パッケージを準備して作成します。
   duration: 60 minutes
   level: 400
   islab: true
   primarytopics:
-    - Azure
     - Azure Virtual Desktop
 ---
 

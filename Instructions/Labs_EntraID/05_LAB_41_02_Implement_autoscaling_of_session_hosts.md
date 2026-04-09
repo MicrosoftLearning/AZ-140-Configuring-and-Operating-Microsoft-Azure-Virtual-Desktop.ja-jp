@@ -2,7 +2,7 @@
 lab:
   title: 'ラボ: セッション ホストの自動スケーリングを実装する'
   module: 'Module 4.1: Monitor and manage Azure Virtual Desktop services'
-  description: このラボを完了すると、次のことができるようになります。
+  description: Azure Virtual Desktop の自動スケーリングを実装して評価します。
   duration: 45 minutes
   level: 300
   islab: true

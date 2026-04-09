@@ -2,12 +2,14 @@
 lab:
   title: 'ラボ: AVD のストレージを実装および管理する (Microsoft Entra DS)'
   module: 'Module 2: Implement an AVD Infrastructure'
-  description: このラボを完了すると、次のことができるようになります。
+  description: Microsoft Entra DS 環境で Azure Virtual Desktop 用のプロファイル コンテナーを格納するように Azure Files を構成します。
   duration: 30 minutes
   level: 300
   islab: true
   primarytopics:
-    - Microsoft Entra
+    - Azure Virtual Desltop
+    - Azure Files
+    - Microsoft Entra DS
 ---
 
 # ラボ - AVD のストレージを実装および管理する (Microsoft Entra DS)
